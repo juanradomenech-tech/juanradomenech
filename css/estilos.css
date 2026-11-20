@@ -45,8 +45,10 @@ h1, h2, h3 { margin: 0; font-family: var(--font-condensed); font-weight: 700; te
 /* ---------- Cabecera ---------- */
 .cabecera { position: fixed; inset: 0 0 auto 0; height: var(--header-h); z-index: 50; display: flex; align-items: center; justify-content: space-between; padding: 0 var(--pad); background: linear-gradient(to bottom, rgba(0,0,0,.85), rgba(0,0,0,0)); transition: background .3s var(--ease); }
 .cabecera.con-fondo { background: rgba(0, 0, 0, .92); }
-.logo { font-family: var(--font-condensed); font-weight: 800; font-size: 22px; letter-spacing: 1px; text-transform: uppercase; line-height: 1; }
-.logo span { font-weight: 300; }
+.logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-condensed); font-weight: 800; font-size: 22px; letter-spacing: 1px; text-transform: uppercase; line-height: 1; }
+.logo-bola { width: 28px; height: 28px; flex: none; transition: transform .6s var(--ease); }
+.logo:hover .logo-bola { transform: rotate(360deg); }
+.logo-nombre span { font-weight: 300; }
 .menu { display: flex; gap: 40px; }
 .menu a { font-family: var(--font-condensed); font-weight: 700; font-size: 14px; letter-spacing: 4px; text-transform: uppercase; color: var(--white-40); transition: color .2s; }
 .menu a:hover, .menu a.activo { color: var(--white); }
