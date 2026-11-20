@@ -4,7 +4,7 @@
     "dominio": "https://juanradomenech.com",
     "nombre": "Juanra Doménech",
     "titulo": "Juanra Doménech · AI Product Designer y ciclista",
-    "descripcion": "Concibo y diseño producto de software con IA: del diagnóstico al producto en marcha. 25 años creando SaaS. Y cuando cierro el portátil, salgo en bici.",
+    "descripcion": "AI Product Designer: mi trabajo es ganar tiempo. Concibo y diseño producto de software con IA, del diagnóstico al producto en marcha. Y cuando cierro el portátil, salgo en bici.",
     "idioma": "es-ES"
   },
   "contacto": {
@@ -25,7 +25,7 @@
     "consultor": {
       "titulo": "AI Product",
       "subtitulo": "Designer",
-      "frase": "Del diagnóstico al producto en marcha: lo concibo, lo diseño y dirijo su construcción con IA.",
+      "frase": "Mi trabajo es ganar tiempo: concibo y diseño el producto, y dirijo su construcción con IA.",
       "revisar": true,
       "foto": "media/fotos/juanra-cafe.webp"
     },
@@ -836,7 +836,8 @@
           ]
         }
       ]
-    }
+    },
+    "lema": "Mi trabajo es ganar tiempo."
   },
   "puente": {
     "titulo": "La misma cabeza, dos carreteras",
@@ -1093,7 +1094,7 @@
           "designer",
           "diseñador"
         ],
-        "texto": "Soy AI Product Designer: concibo y diseño software a partir de un diagnóstico de tu empresa y dirijo su construcción, la haga la IA o un equipo de desarrollo. Trabajo en cinco pasos: diagnóstico, concepto, diseño, dirección del desarrollo y evolución. Los servicios de AI Officer para pymes los presto desde iLumya (ilumya.es).",
+        "texto": "Soy AI Product Designer y mi trabajo es ganar tiempo: concibo y diseño software a partir de un diagnóstico de tu empresa y dirijo su construcción, la haga la IA o un equipo de desarrollo. Trabajo en cinco pasos: diagnóstico, concepto, diseño, dirección del desarrollo y evolución. Los servicios de AI Officer para pymes los presto desde iLumya (ilumya.es).",
         "siguientes": [
           "ilumya",
           "precios",

@@ -625,3 +625,4 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .empresa .boton { background: var(--azul-ilumya); color: var(--black); }
 .empresa .boton::before { background: #7ff7ff; }
 @media (max-width: 760px) { .empresa-marca { border-color: var(--white-10); } }
+.lema-pro { margin: 18px 0 6px; }

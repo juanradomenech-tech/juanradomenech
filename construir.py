@@ -611,6 +611,7 @@ def consultor():
       <div>
         <span class="etiqueta">01 · {e(co.get("rol", "Consultor"))}</span>
         <h2 class="titulo aparece" id="t-intro-consultor">{e(co["titulo"])}</h2>
+        {f'<p class="tiempo-destacado lema-pro aparece"><span>{e(co["lema"])}</span></p>' if lleno(co.get("lema")) else ""}
         <p class="entradilla aparece">{e(co["entradilla"])}</p>
         <p class="intro-acciones aparece"><a class="boton boton--lg" href="{"#metodo" if co.get("metodo") else "#servicios"}">{"Cómo trabajo" if co.get("metodo") else "Ver servicios"}</a><a class="boton boton--lg boton--linea" href="#contacto">Hablemos</a></p>
       </div>
