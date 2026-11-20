@@ -202,9 +202,12 @@ def asistente_html():
 </div>'''
 
 
-def redes():
+def redes(activa=""):
     c = C["contacto"]
     items = [("LinkedIn", c.get("linkedin")), ("Instagram", c.get("instagram")), ("Strava", c.get("strava"))]
+    # En la página profesional no sale Strava; en Ciclista no sale LinkedIn
+    quitar = {"consultor": "Strava", "ciclista": "LinkedIn"}.get(activa)
+    items = [(n, u) for n, u in items if n != quitar]
     return "".join(f'<a href="{e(u)}" target="_blank" rel="noopener me">{n}</a>' for n, u in items if lleno(u))
 
 
@@ -407,7 +410,7 @@ def contacto_html(activa=""):
     <p>{e(cie["texto"])}</p>
     <div class="acciones">{"".join(acciones)}</div>
     {telefono_html("cierre-telefono") if activa == "consultor" else ""}
-    <div class="redes">{redes()}</div>
+    <div class="redes">{redes(activa)}</div>
   </div>
 </section>'''
 
