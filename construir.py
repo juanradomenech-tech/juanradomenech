@@ -233,7 +233,7 @@ def telefono_html(clase):
     tel = C["contacto"].get("telefono", "")
     if not lleno(tel):
         return ""
-    return f'<p class="{clase}">Teléfono <a href="tel:+34{e(tel.replace(" ", ""))}">{e(tel)}</a></p>'
+    return f'<p class="{clase}">Teléfono profesional <a href="tel:+34{e(tel.replace(" ", ""))}">{e(tel)}</a></p>'
 
 
 def pie(activa=""):
