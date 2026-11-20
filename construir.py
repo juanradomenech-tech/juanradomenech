@@ -389,7 +389,8 @@ def contacto_html(activa=""):
         fondo = (f'''<div class="cierre-fondo" aria-hidden="true">
     <img class="cierre-poster" src="/{e(poster)}" alt="" loading="lazy">
     <video class="cierre-video" autoplay muted loop playsinline preload="metadata" poster="/{e(poster)}"><source src="/{e(vid["mp4"])}" type="video/mp4"></video>
-  </div>''')
+  </div>
+  <button class="cierre-sonido" type="button" aria-pressed="false"><span class="cierre-sonido-icono" aria-hidden="true"></span><span class="cierre-sonido-texto">Activar sonido</span></button>''')
         clase = "cierre cierre--video"
     return f'''<section class="{clase}" id="contacto" aria-labelledby="t-contacto">
   {fondo}

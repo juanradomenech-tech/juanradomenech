@@ -191,3 +191,67 @@
     else setTimeout(function () { burbuja(D.no_entiendo, "bot"); opciones(["servicios", "formacion-equipos"], true); }, 350);
   });
 })();
+
+/* «Hablemos» de Ciclista: el sonido del vídeo suena cuando el vídeo está en pantalla y se apaga al salir.
+   Los navegadores solo dejan poner sonido después de que la persona haya tocado o pulsado algo en la página,
+   así que el sonido se activa con la primera interacción (o con el botón) y queda el botón para silenciarlo. */
+(function () {
+  var sec = document.querySelector(".cierre--video");
+  if (!sec) return;
+  var v = sec.querySelector(".cierre-video");
+  var b = sec.querySelector(".cierre-sonido");
+  if (!v || !b) return;
+  if (window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches) { b.hidden = true; return; }
+  var guardado = null;
+  try { guardado = sessionStorage.getItem("jd-sonido"); } catch (e) {}
+  var permitido = false, silenciado = guardado === "no", visible = false, temporizador = null;
+
+  function fundido(destino, alAcabar) {
+    clearInterval(temporizador);
+    var pasos = 12, i = 0, inicio = v.muted ? 0 : v.volume;
+    temporizador = setInterval(function () {
+      i++;
+      try { v.volume = Math.max(0, Math.min(1, inicio + (destino - inicio) * (i / pasos))); } catch (e) {}
+      if (i >= pasos) { clearInterval(temporizador); if (alAcabar) alAcabar(); }
+    }, 35);
+  }
+  function boton() {
+    var on = permitido && !silenciado;
+    b.setAttribute("aria-pressed", on ? "true" : "false");
+    b.classList.toggle("activo", on);
+    b.querySelector(".cierre-sonido-texto").textContent = on ? "Silenciar" : "Activar sonido";
+  }
+  function aplicar() {
+    if (permitido && !silenciado && visible) {
+      try { v.volume = 0; } catch (e) {}
+      v.muted = false;
+      var p = v.play();
+      if (p && p.catch) p.catch(function () { v.muted = true; v.play(); permitido = false; boton(); });
+      if (v.paused) { v.muted = true; v.play(); }
+      fundido(1);
+    } else if (!v.muted) {
+      fundido(0, function () { v.muted = true; });
+    }
+    boton();
+  }
+  function primeraInteraccion(e) {
+    if (b.contains(e.target)) return;
+    if (!permitido) { permitido = true; aplicar(); }
+    ["pointerdown", "keydown", "touchend"].forEach(function (t) { document.removeEventListener(t, primeraInteraccion, true); });
+  }
+  ["pointerdown", "keydown", "touchend"].forEach(function (t) { document.addEventListener(t, primeraInteraccion, true); });
+
+  b.addEventListener("click", function () {
+    if (permitido && !silenciado) { silenciado = true; } else { permitido = true; silenciado = false; }
+    try { sessionStorage.setItem("jd-sonido", silenciado ? "no" : "si"); } catch (e) {}
+    aplicar();
+  });
+  if ("IntersectionObserver" in window) {
+    new IntersectionObserver(function (entradas) {
+      visible = entradas[0].isIntersecting;
+      aplicar();
+    }, { threshold: 0.5 }).observe(sec);
+  }
+  document.addEventListener("visibilitychange", function () { if (document.hidden && !v.muted) { v.muted = true; } else if (!document.hidden) { aplicar(); } });
+  boton();
+})();
