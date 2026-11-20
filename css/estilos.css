@@ -553,3 +553,48 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .app-precio-caja p { margin: 12px 0 0; max-width: 560px; color: var(--white-70); line-height: 1.6; }
 @media (max-width: 1000px) { .app-funciones { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 640px) { .app-funciones, .app-capturas { grid-template-columns: 1fr; } .app-precio-caja { flex-direction: column; align-items: flex-start; } .app-marco { margin-top: 40px; } }
+
+/* Cómo trabajo (pasos) y producto concebido */
+.met-pasos { list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 2px; counter-reset: paso; }
+.met-paso { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 28px 24px 26px; background: var(--black-card); border-top: 2px solid var(--orange); }
+.met-num { font-family: var(--font-condensed); font-weight: 800; font-size: 44px; line-height: 1; color: var(--orange); }
+.met-paso h3 { font-size: 26px; letter-spacing: 2px; }
+.met-paso p { font-size: 15px; color: var(--white-70); }
+.met-paso .met-entrega { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--white-10); color: var(--white); }
+.met-entrega strong { display: block; margin-bottom: 4px; font-family: var(--font-condensed); font-size: 12px; letter-spacing: 3px; text-transform: uppercase; color: var(--orange); }
+.productos { margin-top: 56px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 2px; }
+.producto { position: relative; min-height: 380px; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px; padding: 32px 28px; background: var(--black-card); overflow: hidden; }
+.producto .arte-tarjeta { position: absolute; inset: 0; opacity: .45; transition: opacity .5s; -webkit-mask-image: linear-gradient(to bottom, #000 30%, transparent 65%); mask-image: linear-gradient(to bottom, #000 30%, transparent 65%); }
+.producto:hover .arte-tarjeta { opacity: .85; }
+.producto .anos { position: absolute; top: 28px; left: 28px; font-family: var(--font-condensed); font-weight: 700; font-size: 15px; letter-spacing: 3px; color: var(--orange); }
+.producto .sello { position: absolute; top: 24px; right: 24px; padding: 4px 10px; background: var(--orange); color: var(--black); font-family: var(--font-condensed); font-weight: 700; font-size: 13px; letter-spacing: 2px; text-transform: uppercase; }
+.producto-tipo { position: relative; font-family: var(--font-condensed); font-weight: 700; font-size: 13px; letter-spacing: 3px; text-transform: uppercase; color: var(--white-40); }
+.producto h3 { position: relative; font-size: 34px; letter-spacing: 2px; }
+.producto p { position: relative; font-size: 15px; color: var(--white-70); }
+@media (max-width: 1100px) { .met-pasos { grid-template-columns: repeat(2, 1fr); } .productos { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 640px) { .met-pasos, .productos { grid-template-columns: 1fr; } .producto { min-height: 300px; } }
+
+/* Pirámide invertida */
+.pir { display: grid; grid-template-columns: 1fr 1fr; gap: clamp(32px, 6vw, 96px); align-items: center; }
+.pir-figura { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.pir-capa { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 18px 48px; min-height: 96px; clip-path: polygon(0 0, 100% 0, calc(100% - 28px) 100%, 28px 100%); }
+.pir-capa strong { font-family: var(--font-condensed); font-weight: 800; font-size: 26px; letter-spacing: 3px; text-transform: uppercase; line-height: 1.1; }
+.pir-capa span { font-size: 14px; line-height: 1.35; }
+.pir-capa--1 { width: 100%; background: var(--orange); color: var(--black); }
+.pir-capa--2 { width: calc(100% - 56px); background: var(--white); color: var(--black); }
+.pir-capa--3 { width: calc(100% - 112px); background: var(--black-card); color: var(--white); border-top: 1px solid var(--white-10); }
+.pir-capa--3 span { color: var(--white-70); }
+.pir-ventajas { margin-top: 64px; grid-template-columns: repeat(3, 1fr); }
+.pir-ventajas .idea { border-top-color: var(--orange); }
+.pir-ventajas .idea p { color: var(--white-70); }
+/* Consultora / empresa de software / conmigo */
+.rol-grid { margin-top: 56px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; }
+.rol-col { padding: 32px 28px; background: var(--black-card); }
+.rol-col h3 { font-size: 26px; letter-spacing: 2px; color: var(--white-70); }
+.rol-col ul { list-style: none; margin: 20px 0 0; padding: 0; display: grid; gap: 12px; }
+.rol-col li { position: relative; padding-left: 22px; font-size: 15px; color: var(--white-70); }
+.rol-col li::before { content: "—"; position: absolute; left: 0; color: var(--white-40); }
+.rol-col--yo { background: var(--orange); }
+.rol-col--yo h3, .rol-col--yo li { color: var(--black); }
+.rol-col--yo li::before { content: "→"; color: var(--black); }
+@media (max-width: 900px) { .pir { grid-template-columns: 1fr; } .pir-ventajas, .rol-grid { grid-template-columns: 1fr; } }
