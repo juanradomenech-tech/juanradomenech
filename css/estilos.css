@@ -526,3 +526,30 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .tiempo-destacado { margin: 28px 0 0; font-family: var(--font-condensed); font-weight: 800; font-size: clamp(40px, 5.6vw, 84px); line-height: 1; letter-spacing: 1px; text-transform: uppercase; color: var(--orange); }
 .tiempo-destacado span { display: inline-block; padding-left: 22px; border-left: 6px solid var(--orange); }
 .tiempo .tiempo-despues { margin-top: 24px; }
+
+/* Página de app (PersonalFinance) */
+.app-hero { padding-top: clamp(120px, 14vw, 180px); }
+.app-nombre { margin: 18px 0 0; font-family: var(--font-condensed); font-weight: 800; font-size: clamp(38px, 11vw, 140px); line-height: .9; overflow-wrap: anywhere; letter-spacing: 1px; text-transform: uppercase; }
+.app-lema { margin: 14px 0 0; font-family: var(--font-condensed); font-weight: 300; font-size: clamp(24px, 3vw, 40px); letter-spacing: 2px; text-transform: uppercase; color: var(--orange); }
+.app-hero .entradilla { margin-top: 28px; max-width: 760px; }
+.app-acciones { display: flex; flex-wrap: wrap; gap: 12px; margin: 34px 0 0; }
+.app-marco { margin: 64px 0 0; border-radius: 14px; overflow: hidden; background: #1c1c1c; box-shadow: 0 30px 80px rgba(0,0,0,.6), 0 0 0 1px var(--white-10); }
+.app-marco-barra { display: flex; gap: 8px; padding: 12px 16px; background: #1c1c1c; }
+.app-marco-barra i { width: 11px; height: 11px; border-radius: 50%; background: var(--white-10); }
+.app-marco-barra i:first-child { background: var(--orange); }
+.app-marco img { display: block; width: 100%; height: auto; }
+.app-aviso { margin: 14px 0 0; font-size: 12px; color: var(--white-40); }
+.app-funciones { list-style: none; margin: 56px 0 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px; }
+.app-funciones li { padding: 30px 26px; background: var(--black-card); border-top: 3px solid var(--orange); }
+.app-funciones span { font-family: var(--font-condensed); font-weight: 300; font-size: 30px; color: var(--white-40); }
+.app-funciones h3 { margin: 12px 0 8px; font-family: var(--font-condensed); font-weight: 700; font-size: 21px; letter-spacing: 1.2px; text-transform: uppercase; line-height: 1.1; }
+.app-funciones p { margin: 0; font-size: 15px; line-height: 1.55; color: var(--white-70); }
+.app-capturas { display: grid; grid-template-columns: 2.2fr 1fr; gap: 24px; margin-top: 64px; align-items: end; }
+.app-captura { margin: 0; }
+.app-captura img { display: block; width: 100%; height: auto; border-radius: 12px; box-shadow: 0 0 0 1px var(--white-10), 0 20px 50px rgba(0,0,0,.5); }
+.app-captura--alta img { max-width: 300px; margin: 0 auto; border-radius: 28px; }
+.app-captura figcaption { margin-top: 14px; font-size: 13px; color: var(--white-40); text-align: center; }
+.app-precio-caja { display: flex; align-items: center; justify-content: space-between; gap: 32px; padding: clamp(32px, 5vw, 56px); background: var(--black-card); border-left: 6px solid var(--orange); }
+.app-precio-caja p { margin: 12px 0 0; max-width: 560px; color: var(--white-70); line-height: 1.6; }
+@media (max-width: 1000px) { .app-funciones { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .app-funciones, .app-capturas { grid-template-columns: 1fr; } .app-precio-caja { flex-direction: column; align-items: flex-start; } .app-marco { margin-top: 40px; } }
