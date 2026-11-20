@@ -233,9 +233,9 @@ def telefono_html(clase):
     return f'<p class="{clase}">Teléfono <a href="tel:+34{e(tel.replace(" ", ""))}">{e(tel)}</a></p>'
 
 
-def pie():
+def pie(activa=""):
     return f'''<footer class="pie">
-  <span>© {HOY.year} Juanra Doménech{f' · <a href="tel:+34{e(C["contacto"]["telefono"].replace(" ", ""))}">{e(C["contacto"]["telefono"])}</a>' if lleno(C["contacto"].get("telefono")) else ""}</span>
+  <span>© {HOY.year} Juanra Doménech{f' · <a href="tel:+34{e(C["contacto"]["telefono"].replace(" ", ""))}">{e(C["contacto"]["telefono"])}</a>' if lleno(C["contacto"].get("telefono")) and activa == "consultor" else ""}</span>
   <nav aria-label="Legal"><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a>{'<button type="button" class="pie-cookies" data-cookies hidden>Configurar cookies</button>' if GA else ""}</nav>
 </footer>'''
 
@@ -406,7 +406,7 @@ def contacto_html(activa=""):
     <h2 class="titulo" id="t-contacto">{e(cie["titulo"])}</h2>
     <p>{e(cie["texto"])}</p>
     <div class="acciones">{"".join(acciones)}</div>
-    {telefono_html("cierre-telefono")}
+    {telefono_html("cierre-telefono") if activa == "consultor" else ""}
     <div class="redes">{redes()}</div>
   </div>
 </section>'''
@@ -420,7 +420,7 @@ def cuerpo(activa, contenido):
 {contenido}
 {contacto_html(activa)}
 </main>
-{pie()}
+{pie(activa)}
 {asistente_html()}
 {scripts()}
 </body>
@@ -440,7 +440,6 @@ def index():
         **({"worksFor": {"@type": "Organization", "name": "iLumya Technologies", "url": C["consultor"]["ilumya"]["url"]},
             "jobTitle": C["consultor"]["titulo"] + " · Fundador de iLumya"} if C["consultor"].get("ilumya", {}).get("mostrar") else {}),
         "sameAs": [u for u in (C["contacto"].get(k) for k in ("linkedin", "instagram", "strava")) if lleno(u)],
-        **({"telephone": "+34 " + C["contacto"]["telefono"]} if lleno(C["contacto"].get("telefono")) else {}),
     }
     contenido = f'''<section class="portada" id="inicio" aria-label="Dos partes: consultor y ciclista">
   <h1 class="sr-only">Juanra Doménech, {e(C["consultor"]["titulo"])} y ciclista</h1>
