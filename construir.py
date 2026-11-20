@@ -216,7 +216,7 @@ def cabecera(activa=""):
             + '<a href="#contacto">Contacto</a>')
     return f'''<a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="cabecera">
-  <a class="logo" href="/" aria-label="Juanra Doménech, inicio">Juanra <span>Doménech</span></a>
+  <a class="logo" href="/" aria-label="Juanra Doménech, inicio"><svg class="logo-bola" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><radialGradient id="bola8" cx="34%" cy="28%" r="78%"><stop offset="0" stop-color="#5a5a5a"/><stop offset=".45" stop-color="#161616"/><stop offset="1" stop-color="#000"/></radialGradient></defs><circle cx="16" cy="16" r="15.2" fill="url(#bola8)" stroke="rgba(255,255,255,.28)" stroke-width=".8"/><circle cx="14.6" cy="13.6" r="6.6" fill="#f4f4f4"/><text x="14.6" y="17.1" text-anchor="middle" font-family="Barlow Condensed, Arial, sans-serif" font-weight="800" font-size="10" fill="#000">8</text><ellipse cx="9.2" cy="7.6" rx="3.2" ry="1.7" fill="#fff" opacity=".35" transform="rotate(-30 9.2 7.6)"/></svg><span class="logo-nombre">Juanra <span>Doménech</span></span></a>
   <nav class="menu" aria-label="Principal">{menu}</nav>
   <button class="menu-boton" type="button" aria-label="Abrir el menú" aria-expanded="false" aria-controls="menu-movil"><span></span><span></span><span></span></button>
 </header>
@@ -946,7 +946,7 @@ def error404():
 
 
 # ---------------------------------------------------------------- otros archivos
-FAVICON = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" fill="#000"/><rect x="0" y="58" width="64" height="6" fill="#FF671F"/><text x="32" y="44" text-anchor="middle" font-family="Arial Narrow, Helvetica, Arial, sans-serif" font-weight="700" font-size="34" letter-spacing="1" fill="#fff">JD</text></svg>'''
+FAVICON = '''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><radialGradient id="b" cx="34%" cy="28%" r="78%"><stop offset="0" stop-color="#5a5a5a"/><stop offset=".45" stop-color="#161616"/><stop offset="1" stop-color="#000"/></radialGradient></defs><circle cx="32" cy="32" r="31" fill="url(#b)"/><circle cx="29.5" cy="27.5" r="14" fill="#f4f4f4"/><text x="29.5" y="35.2" text-anchor="middle" font-family="Arial Narrow, Helvetica, Arial, sans-serif" font-weight="700" font-size="22" fill="#000">8</text><ellipse cx="18" cy="15" rx="6.5" ry="3.4" fill="#fff" opacity=".35" transform="rotate(-30 18 15)"/></svg>'''
 
 REDIRECTS = """# www -> dominio principal
 https://www.juanradomenech.com/*  https://juanradomenech.com/:splat  301!
