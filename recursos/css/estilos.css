@@ -626,3 +626,7 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .empresa .boton::before { background: #7ff7ff; }
 @media (max-width: 760px) { .empresa-marca { border-color: var(--white-10); } }
 .lema-pro { margin: 18px 0 6px; }
+.cierre-telefono { margin: 28px auto 0 !important; font-family: var(--font-condensed); font-weight: 700; font-size: 14px !important; letter-spacing: 4px; text-transform: uppercase; color: var(--white-40) !important; }
+.cierre-telefono a { margin-left: 10px; font-size: 26px; letter-spacing: 3px; color: var(--white); transition: color .3s; }
+.cierre-telefono a:hover { color: var(--orange); }
+.pie span a:hover { color: var(--orange); }

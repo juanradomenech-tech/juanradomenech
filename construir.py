@@ -226,9 +226,16 @@ def cabecera(activa=""):
 </div>'''
 
 
+def telefono_html(clase):
+    tel = C["contacto"].get("telefono", "")
+    if not lleno(tel):
+        return ""
+    return f'<p class="{clase}">Teléfono <a href="tel:+34{e(tel.replace(" ", ""))}">{e(tel)}</a></p>'
+
+
 def pie():
     return f'''<footer class="pie">
-  <span>© {HOY.year} Juanra Doménech</span>
+  <span>© {HOY.year} Juanra Doménech{f' · <a href="tel:+34{e(C["contacto"]["telefono"].replace(" ", ""))}">{e(C["contacto"]["telefono"])}</a>' if lleno(C["contacto"].get("telefono")) else ""}</span>
   <nav aria-label="Legal"><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a><a href="/cookies.html">Cookies</a>{'<button type="button" class="pie-cookies" data-cookies hidden>Configurar cookies</button>' if GA else ""}</nav>
 </footer>'''
 
@@ -399,6 +406,7 @@ def contacto_html(activa=""):
     <h2 class="titulo" id="t-contacto">{e(cie["titulo"])}</h2>
     <p>{e(cie["texto"])}</p>
     <div class="acciones">{"".join(acciones)}</div>
+    {telefono_html("cierre-telefono")}
     <div class="redes">{redes()}</div>
   </div>
 </section>'''
@@ -428,10 +436,11 @@ def index():
         **({"worksFor": {"@type": "Organization", "name": "iLumya", "url": C["consultor"]["ilumya"]["url"]}}
            if C["consultor"].get("ilumya", {}).get("mostrar") else {}),
         "description": s["descripcion"],
-        "knowsAbout": ["Inteligencia artificial", "Transformación digital", "Marketing", "Ciclismo"],
+        "knowsAbout": ["Diseño de producto", "Inteligencia artificial", "Software", "Transformación digital", "Ciclismo"],
         **({"worksFor": {"@type": "Organization", "name": "iLumya Technologies", "url": C["consultor"]["ilumya"]["url"]},
             "jobTitle": C["consultor"]["titulo"] + " · Fundador de iLumya"} if C["consultor"].get("ilumya", {}).get("mostrar") else {}),
         "sameAs": [u for u in (C["contacto"].get(k) for k in ("linkedin", "instagram", "strava")) if lleno(u)],
+        **({"telephone": "+34 " + C["contacto"]["telefono"]} if lleno(C["contacto"].get("telefono")) else {}),
     }
     contenido = f'''<section class="portada" id="inicio" aria-label="Dos partes: consultor y ciclista">
   <h1 class="sr-only">Juanra Doménech, {e(C["consultor"]["titulo"])} y ciclista</h1>
