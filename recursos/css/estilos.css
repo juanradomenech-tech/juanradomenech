@@ -615,3 +615,13 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .cierre-sonido.activo { border-color: var(--orange); }
 .cierre-sonido.activo .cierre-sonido-icono { -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 9v6h4l5 4V5L7 9H3z'/%3E%3Cpath d='M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E"); mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M3 9v6h4l5 4V5L7 9H3z'/%3E%3Cpath d='M15.5 8.5a5 5 0 010 7M18.5 5.5a9 9 0 010 13' fill='none' stroke='%23000' stroke-width='2'/%3E%3C/svg%3E"); }
 @media (max-width: 640px) { .cierre-sonido { left: 50%; transform: translateX(-50%); bottom: 20px; } }
+/* iLumya sin pastilla: fondo de la web, logo y botón en el azul de iLumya */
+.empresa { background: var(--black-card); color: var(--white); border-top: 2px solid var(--azul-ilumya); }
+.empresa-marca { border-color: var(--white-10); }
+.empresa .etiqueta { color: var(--azul-ilumya); }
+.empresa .etiqueta::before { background: var(--azul-ilumya); }
+.empresa-frase { color: var(--white); }
+.empresa-texto p { color: var(--white-70); }
+.empresa .boton { background: var(--azul-ilumya); color: var(--black); }
+.empresa .boton::before { background: #7ff7ff; }
+@media (max-width: 760px) { .empresa-marca { border-color: var(--white-10); } }
