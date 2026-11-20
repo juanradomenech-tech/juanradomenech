@@ -3,8 +3,8 @@
   "sitio": {
     "dominio": "https://juanradomenech.com",
     "nombre": "Juanra Doménech",
-    "titulo": "Juanra Doménech · Consultor de tecnología y ciclista",
-    "descripcion": "Más de 25 años en marketing, negocio y transformación digital. Hoy ayudo a las pymes a adaptar su gestión a la IA. Y cuando cierro el portátil, salgo en bici.",
+    "titulo": "Juanra Doménech · AI Product Designer y ciclista",
+    "descripcion": "Concibo y diseño producto de software con IA: del diagnóstico al producto en marcha. 25 años creando SaaS. Y cuando cierro el portátil, salgo en bici.",
     "idioma": "es-ES"
   },
   "contacto": {
@@ -23,9 +23,9 @@
   },
   "portada": {
     "consultor": {
-      "titulo": "Consultor",
-      "subtitulo": "Tecnología",
-      "frase": "25 años ayudando a empresas a vender, organizarse y decidir mejor. Ahora, con inteligencia artificial.",
+      "titulo": "AI Product",
+      "subtitulo": "Designer",
+      "frase": "Del diagnóstico al producto en marcha: lo concibo, lo diseño y dirijo su construcción con IA.",
       "revisar": true,
       "foto": "media/fotos/juanra-cafe.webp"
     },
@@ -38,29 +38,29 @@
     }
   },
   "consultor": {
-    "titulo": "Consultor de tecnología",
-    "entradilla": "Llevo más de 25 años en marketing, negocio y transformación digital: he dirigido el marketing de empresas que venden en más de 140 países, he creado dos empresas de software y llevo veinte años explicando gestión en aulas, radio y prensa. A principios de 2026 creé iLumya, una nueva empresa tecnológica, y a través de ella trabajo como AI Officer para pymes: el responsable de IA que una pyme no puede tener en plantilla. Y soy formador de equipos: preparo a las personas para que la tecnología y la IA se usen de verdad en el día a día.",
+    "titulo": "AI Product Designer",
+    "entradilla": "Concibo y diseño producto de software. Parto de un diagnóstico de cómo trabaja tu empresa, diseño el producto (qué resuelve, para quién, con qué pantallas y con qué datos) y dirijo su construcción, la haga la IA o un equipo de desarrollo, hasta que funciona en el día a día. Llevo 25 años haciéndolo: MKF, Klikair CRM y KlikTicket, que acabé vendiendo a un grupo de software. Hoy lo hago con IA desde iLumya, la empresa que fundé en 2026 y desde la que también trabajo como AI Officer para pymes.",
     "revisar": true,
     "cifras": [
       {
         "numero": "25",
         "sufijo": "+",
-        "texto": "años en marketing, negocio y transformación digital"
+        "texto": "años creando producto digital, de la idea al mercado"
       },
       {
-        "numero": "140",
-        "sufijo": "+",
-        "texto": "países en los que venden las empresas para las que he trabajado como consultor e interim marketing manager"
+        "numero": "3",
+        "sufijo": "",
+        "texto": "productos SaaS concebidos y dirigidos: MKF, Klikair CRM y KlikTicket"
+      },
+      {
+        "numero": "1",
+        "sufijo": "",
+        "texto": "producto vendido a un grupo de software: KlikTicket"
       },
       {
         "numero": "20",
         "sufijo": "+",
-        "texto": "años como formador de equipos, docente y divulgador de gestión empresarial"
-      },
-      {
-        "numero": "2",
-        "sufijo": "",
-        "texto": "empresas de software creadas: MKF y KlikTicket"
+        "texto": "años formando equipos para que la tecnología se use de verdad"
       }
     ],
     "trayectoria": [
@@ -200,10 +200,10 @@
       "mostrar": true,
       "titulo": "iLumya",
       "subtitulo": "Mi empresa tecnológica",
-      "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes. Mi trabajo como AI Officer lo desarrollo a través de iLumya: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hacen el trabajo cada día - \"Trabajarás como no esperas hacerlo\".",
+      "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. Allí concibo el producto y trabajo como AI Officer. Los servicios para empresas los tienes en ilumya.es.",
       "frase": "Adaptamos la gestión de tu empresa a la IA… y la hacemos evolucionar cada mes.",
       "url": "https://ilumya.es",
-      "boton": "Visitar ilumya.es",
+      "boton": "Ver servicios en ilumya.es",
       "logo": "media/marcas-propias/ilumya-logo-negro.png"
     },
     "servicios_titulo": "AI Officer: diez formas de trabajar contigo",
@@ -709,7 +709,134 @@
     ],
     "linkedin_fuente": "Publicaciones de LinkedIn, actualizadas a 19 de noviembre de 2026.",
     "formacion_titulo": "Nunca he dejado de estudiar",
-    "formacion_intro": "Una licenciatura, cinco másteres y tres cursos superiores entre 1993 y 2017: del marketing clásico a internet, el comercio digital y los datos. Lo que enseño a los equipos lo he estudiado antes."
+    "formacion_intro": "Una licenciatura, cinco másteres y tres cursos superiores entre 1993 y 2017: del marketing clásico a internet, el comercio digital y los datos. Lo que enseño a los equipos lo he estudiado antes.",
+    "rol": "Product Designer",
+    "mostrar_servicios": false,
+    "metodo": {
+      "titulo": "Del diagnóstico al producto en marcha",
+      "intro": "Diseño el producto y dirijo su construcción; el código lo escribe la IA o un programador. Cinco pasos, y en cada uno te llevas algo concreto.",
+      "pasos": [
+        {
+          "titulo": "Diagnóstico",
+          "texto": "Entro en tu empresa y miro cómo se trabaja de verdad: procesos, datos, herramientas y dónde se pierden las horas.",
+          "entregable": "Mapa del proceso y el problema que merece un producto."
+        },
+        {
+          "titulo": "Concepto",
+          "texto": "Defino el producto: qué resuelve, para quién y qué no va a hacer. Lo que no aporta se queda fuera.",
+          "entregable": "Ficha de producto y alcance de la primera versión."
+        },
+        {
+          "titulo": "Diseño",
+          "texto": "Diseño pantallas, flujos y datos, y los pruebo con un prototipo antes de escribir una sola línea de código.",
+          "entregable": "Prototipo navegable y especificación lista para construir."
+        },
+        {
+          "titulo": "Dirección",
+          "texto": "Lo construye la IA o un equipo de desarrollo. Yo marco las prioridades, reviso cada entrega y decido qué sale y qué no.",
+          "entregable": "Producto en producción, probado con usuarios reales."
+        },
+        {
+          "titulo": "Evolución",
+          "texto": "Mido el uso y el ahorro y decido la siguiente versión. Un producto que no evoluciona se muere.",
+          "entregable": "Métricas de uso y hoja de ruta."
+        }
+      ]
+    },
+    "productos": {
+      "titulo": "Producto que he concebido",
+      "intro": "No son proyectos de cliente: son productos que pensé, diseñé y llevé al mercado.",
+      "items": [
+        {
+          "anos": "2003 – 2015",
+          "nombre": "MKF",
+          "tipo": "SaaS de gestión",
+          "texto": "Aplicaciones de gestión como servicio que el propio usuario podía personalizar, cuando casi nadie hablaba de SaaS."
+        },
+        {
+          "anos": "2015 – 2018",
+          "nombre": "Klikair CRM",
+          "tipo": "CRM en la nube",
+          "texto": "Un CRM en modo SaaS que concebí y dirigí, de la idea a los primeros clientes."
+        },
+        {
+          "anos": "2018 – 2024",
+          "nombre": "KlikTicket",
+          "tipo": "Gestión de gastos",
+          "sello": "Vendida",
+          "texto": "Plataforma que optimiza la gestión de gastos de empresa. La dirigí como propietario y la vendí con éxito a un grupo de software."
+        },
+        {
+          "anos": "2026 – hoy",
+          "nombre": "iLumya",
+          "tipo": "IA y software para pymes",
+          "texto": "Mi empresa tecnológica: concibo su producto y, desde ella, trabajo como AI Officer para pymes."
+        }
+      ]
+    },
+    "piramide": {
+      "titulo": "Pirámide invertida",
+      "intro": "Las consultoras y las empresas de software funcionan como una pirámide: pocos sénior arriba y muchos júnior abajo haciendo el trabajo. Yo le doy la vuelta.",
+      "capas": [
+        {
+          "texto": "Experiencia",
+          "detalle": "25 años de producto: diagnóstico, concepto y decisiones"
+        },
+        {
+          "texto": "Diseño y dirección",
+          "detalle": "Pantallas, flujos, datos y revisión de cada entrega"
+        },
+        {
+          "texto": "IA",
+          "detalle": "Código, pruebas y documentación"
+        }
+      ],
+      "ventajas": [
+        {
+          "titulo": "Más rápido",
+          "texto": "La IA hace en días lo que antes ocupaba semanas a un equipo júnior."
+        },
+        {
+          "titulo": "Menos coste",
+          "texto": "Pagas experiencia y producto, no horas de aprendizaje de nadie."
+        },
+        {
+          "titulo": "Sin capas",
+          "texto": "Hablas siempre con quien diseña tu producto, del primer día al último."
+        }
+      ]
+    },
+    "comparativa_rol": {
+      "titulo": "Por qué no una consultora ni una empresa de software",
+      "intro": "Entre quien recomienda y quien vende software hay un hueco: alguien que diseña el producto que necesitas y responde de que funcione.",
+      "columnas": [
+        {
+          "nombre": "Una consultora",
+          "puntos": [
+            "Diagnostica y recomienda.",
+            "Te entrega un informe o una presentación.",
+            "La construcción se la encarga otro."
+          ]
+        },
+        {
+          "nombre": "Una empresa de software",
+          "puntos": [
+            "Construye lo que tiene para vender.",
+            "Te adapta su producto, no al revés.",
+            "Cobra licencias cada año."
+          ]
+        },
+        {
+          "nombre": "Conmigo",
+          "destacada": true,
+          "puntos": [
+            "Diagnostico, diseño y dirijo la construcción.",
+            "Te entrego el producto funcionando.",
+            "No vendo licencias: elijo lo que te conviene y mido el resultado."
+          ]
+        }
+      ]
+    }
   },
   "puente": {
     "titulo": "La misma cabeza, dos carreteras",
@@ -940,120 +1067,32 @@
     "temas": [
       {
         "id": "servicios",
-        "boton": "¿Qué servicios ofreces?",
+        "boton": "¿A qué te dedicas?",
         "claves": [
+          "aplicacion",
+          "aplicación",
+          "app",
+          "ayuda",
+          "ayudar",
+          "consultor",
+          "consultoria",
+          "dedicas",
+          "diseñas",
+          "diseño",
+          "haces",
+          "ofreces",
+          "producto",
           "servicio",
           "servicios",
-          "ofreces",
-          "haces",
-          "ayudar",
-          "ayuda",
+          "software",
           "trabajar contigo",
-          "consultor",
-          "consultoria"
+          "designer",
+          "diseñador"
         ],
-        "texto": "Trabajo como AI Officer para pymes en cuatro líneas: Valor (ahorrar tiempo con IA), Confianza (vender con garantías sobre tu uso de IA), Continuidad (alguien que se ocupe de la IA cada mes) y Sector (industria, salud, gestorías y agencias). Son diez servicios en total.",
+        "texto": "Soy AI Product Designer: concibo y diseño software a partir de un diagnóstico de tu empresa y dirijo su construcción, la haga la IA o un equipo de desarrollo. Trabajo en cinco pasos: diagnóstico, concepto, diseño, dirección del desarrollo y evolución. Los servicios de AI Officer para pymes los presto desde iLumya (ilumya.es).",
         "siguientes": [
-          "valor",
-          "confianza",
-          "continuidad",
-          "sector"
-        ]
-      },
-      {
-        "id": "valor",
-        "boton": "Ahorrar tiempo con IA",
-        "claves": [
-          "ahorro",
-          "ahorrar",
-          "horas",
-          "productividad",
-          "agente",
-          "agentes",
-          "automatizar",
-          "automatizacion",
-          "herramienta",
-          "proveedor",
-          "comprar",
-          "ahorrar tiempo",
-          "perder tiempo"
-        ],
-        "texto": "Para ganar con la IA hay tres servicios: Sprint de ahorro con IA (3 semanas: un proceso, un piloto y el ahorro medido en horas), Agentes con control (4-6 semanas: agentes de IA con permisos, aprobaciones y registro) y Compra de IA sin sorpresas (2-4 semanas: elegir herramienta y proveedor sin depender de nadie).",
-        "siguientes": [
+          "ilumya",
           "precios",
-          "contacto"
-        ]
-      },
-      {
-        "id": "confianza",
-        "boton": "IA de confianza",
-        "claves": [
-          "confianza",
-          "cumplimiento",
-          "normativa",
-          "ley",
-          "ai act",
-          "reglamento",
-          "licitacion",
-          "licitaciones",
-          "clientes grandes",
-          "incidente",
-          "simulacro",
-          "riesgo",
-          "seguridad"
-        ],
-        "texto": "Cumplir es el suelo, no el techo. IA de confianza para vender (2-3 semanas) te prepara para responder a clientes grandes y licitaciones sobre tu uso de IA. El Simulacro de incidente de IA (1 jornada, precio cerrado) ensaya qué haces si la IA falla, antes de que falle.",
-        "siguientes": [
-          "precios",
-          "contacto"
-        ]
-      },
-      {
-        "id": "continuidad",
-        "boton": "AI Officer cada mes",
-        "claves": [
-          "ai officer",
-          "tiempo parcial",
-          "mensual",
-          "suscripcion",
-          "responsable de ia",
-          "cada mes",
-          "continuidad",
-          "direccion",
-          "dueño",
-          "gerente",
-          "directivo",
-          "mentoring"
-        ],
-        "texto": "Con el AI Officer a tiempo parcial tienes un responsable de IA sin contratarlo a jornada completa: suscripción mensual que mantiene vivo todo lo demás. Y con Dirección con IA (bono de 6 sesiones) el dueño aprende a usar la IA y a decidir con criterio.",
-        "siguientes": [
-          "precios",
-          "contacto"
-        ]
-      },
-      {
-        "id": "sector",
-        "boton": "IA para mi sector",
-        "claves": [
-          "sector",
-          "industria",
-          "fabrica",
-          "planta",
-          "maquinas",
-          "maquina",
-          "salud",
-          "clinica",
-          "clinicas",
-          "sanidad",
-          "gestoria",
-          "gestorias",
-          "agencia",
-          "agencias",
-          "cartera",
-          "asesoria"
-        ],
-        "texto": "Hay tres servicios por sector: IA en planta y máquinas (4-8 semanas, para preparar a la industria), IA en salud (3-6 semanas, para clínicas y centros con datos de salud) y AI Officer para tu cartera (alianza anual para que gestorías y agencias ofrezcan IA a sus clientes con respaldo).",
-        "siguientes": [
           "contacto"
         ]
       },
@@ -1095,9 +1134,9 @@
           "software",
           "paradigma"
         ],
-        "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes. Mi trabajo como AI Officer lo desarrollo a través de iLumya: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. «Trabajarás como no esperas hacerlo».",
+        "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. Allí concibo el producto y trabajo como AI Officer. Los servicios para empresas los tienes en ilumya.es.",
         "enlace": {
-          "texto": "Visitar ilumya.es",
+          "texto": "Ver servicios en ilumya.es",
           "url": "https://ilumya.es"
         },
         "siguientes": [
@@ -1123,7 +1162,7 @@
           "caro",
           "cuanto"
         ],
-        "texto": "Depende del servicio y del tamaño de tu empresa. Hay formatos de proyecto, precio cerrado (el simulacro), bono de sesiones y suscripción mensual; el Sprint de ahorro puede llevar una parte variable ligada al ahorro medido. Todos los precios se cierran por escrito tras una primera llamada.",
+        "texto": "Cada producto se presupuesta por escrito después del diagnóstico, cuando ya sabemos qué hay que construir y quién lo construye. Los servicios de AI Officer de iLumya tienen sus propios formatos y precios en ilumya.es.",
         "siguientes": [
           "contacto"
         ]
@@ -1147,7 +1186,7 @@
           "quién",
           "sobre ti"
         ],
-        "texto": "Más de 25 años en marketing, negocio y transformación digital. He dirigido el marketing de empresas que venden en más de 140 países (Miniland, Mutua Levante, Diagram Software), creé MKF, Klikair y KlikTicket (vendida a un grupo de software) y en 2026 fundé iLumya.",
+        "texto": "Más de 25 años creando producto digital y negocio: concebí y dirigí MKF, Klikair CRM y KlikTicket (vendida a un grupo de software), dirigí el marketing de empresas que venden en más de 140 países (Miniland, Mutua Levante, Diagram Software) y en 2026 fundé iLumya.",
         "enlace": {
           "texto": "Ver mi LinkedIn",
           "url": "https://www.linkedin.com/in/juanradomenech/"
@@ -1252,7 +1291,7 @@
           "buenas tardes",
           "hey"
         ],
-        "texto": "¡Hola! ¿En qué te puedo ayudar? Puedo contarte mis servicios, la formación para equipos, iLumya o cómo contactar conmigo.",
+        "texto": "¡Hola! ¿En qué te puedo ayudar? Puedo contarte a qué me dedico, la formación para equipos, iLumya o cómo contactar conmigo.",
         "siguientes": [
           "servicios",
           "formacion-equipos",

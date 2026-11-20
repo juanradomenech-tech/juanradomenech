@@ -212,7 +212,7 @@ def cabecera(activa=""):
     def enlace(href, texto, clave):
         actual = ' class="activo" aria-current="page"' if clave == activa else ""
         return f'<a href="{href}"{actual}>{texto}</a>'
-    menu = (enlace("/consultor.html", "Consultor", "consultor") + enlace("/ciclista.html", "Ciclista", "ciclista")
+    menu = (enlace("/consultor.html", C["consultor"].get("rol", "Consultor"), "consultor") + enlace("/ciclista.html", "Ciclista", "ciclista")
             + '<a href="#contacto">Contacto</a>')
     return f'''<a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="cabecera">
@@ -331,7 +331,7 @@ def puente_html():
     return f'''<section class="puente" aria-labelledby="t-puente">
   {arte_altimetria(3, "arte-puente", 400)}
   <div class="wrap">
-    <span class="etiqueta">Consultor + Ciclista</span>
+    <span class="etiqueta">{e(C["consultor"].get("rol", "Consultor"))} + Ciclista</span>
     <h2 class="titulo aparece" id="t-puente">{e(pu["titulo"])}</h2>
     <p class="entradilla aparece">{e(pu["entradilla"])}</p>
     <div class="ideas aparece">{ideas}</div>
@@ -419,11 +419,11 @@ def index():
         "description": s["descripcion"],
         "knowsAbout": ["Inteligencia artificial", "Transformación digital", "Marketing", "Ciclismo"],
         **({"worksFor": {"@type": "Organization", "name": "iLumya Technologies", "url": C["consultor"]["ilumya"]["url"]},
-            "jobTitle": "Fundador de iLumya y AI Officer para pymes"} if C["consultor"].get("ilumya", {}).get("mostrar") else {}),
+            "jobTitle": C["consultor"]["titulo"] + " · Fundador de iLumya"} if C["consultor"].get("ilumya", {}).get("mostrar") else {}),
         "sameAs": [u for u in (C["contacto"].get(k) for k in ("linkedin", "instagram", "strava")) if lleno(u)],
     }
     contenido = f'''<section class="portada" id="inicio" aria-label="Dos partes: consultor y ciclista">
-  <h1 class="sr-only">Juanra Doménech, consultor de tecnología y ciclista</h1>
+  <h1 class="sr-only">Juanra Doménech, {e(C["consultor"]["titulo"])} y ciclista</h1>
   {panel("consultor", "01", arte_reticula(7), "/consultor.html")}
   {panel("ciclista", "02", arte_altimetria(11), "/ciclista.html")}
 </section>
@@ -482,6 +482,81 @@ def linkedin_html(co):
 </section>'''
 
 
+def metodo_html(co):
+    m = co.get("metodo")
+    if not m:
+        return ""
+    pasos = "".join(f'''<li class="met-paso aparece"><span class="met-num">{i:02d}</span><h3>{e(p["titulo"])}</h3><p>{e(p["texto"])}</p>
+      <p class="met-entrega"><strong>Te llevas</strong>{e(p["entregable"])}</p></li>''' for i, p in enumerate(m["pasos"], 1))
+    return f'''<section class="parte parte--suave metodo" id="metodo" aria-labelledby="t-metodo">
+  <div class="wrap">
+    <span class="etiqueta">Cómo trabajo</span>
+    <h2 class="titulo aparece" id="t-metodo">{e(m["titulo"])}</h2>
+    <p class="entradilla aparece">{e(m["intro"])}</p>
+    <ol class="met-pasos">{pasos}</ol>
+  </div>
+</section>'''
+
+
+def piramide_html(co):
+    pi = co.get("piramide")
+    if not pi:
+        return ""
+    capas = "".join(f'''<div class="pir-capa pir-capa--{i}"><strong>{e(c["texto"])}</strong><span>{e(c["detalle"])}</span></div>'''
+                    for i, c in enumerate(pi["capas"], 1))
+    ventajas = "".join(f'<div class="idea"><h3>{e(v["titulo"])}</h3><p>{e(v["texto"])}</p></div>' for v in pi["ventajas"])
+    return f'''<section class="parte piramide-sec" id="piramide" aria-labelledby="t-piramide">
+  <div class="wrap">
+    <div class="pir">
+      <div>
+        <span class="etiqueta">Cómo está montado</span>
+        <h2 class="titulo aparece" id="t-piramide">{e(pi["titulo"])}</h2>
+        <p class="entradilla aparece">{e(pi["intro"])}</p>
+      </div>
+      <div class="pir-figura aparece" role="img" aria-label="Pirámide invertida: arriba la experiencia, en medio el diseño y la dirección, abajo la IA">{capas}</div>
+    </div>
+    <div class="ideas pir-ventajas aparece">{ventajas}</div>
+  </div>
+</section>'''
+
+
+def comparativa_rol_html(co):
+    cr = co.get("comparativa_rol")
+    if not cr:
+        return ""
+    cols = "".join(f'''<div class="rol-col{" rol-col--yo" if c.get("destacada") else ""} aparece"><h3>{e(c["nombre"])}</h3>
+      <ul>{"".join(f"<li>{e(p)}</li>" for p in c["puntos"])}</ul></div>''' for c in cr["columnas"])
+    return f'''<section class="parte parte--suave" id="por-que" aria-labelledby="t-por-que">
+  <div class="wrap">
+    <span class="etiqueta">El hueco</span>
+    <h2 class="titulo aparece" id="t-por-que">{e(cr["titulo"])}</h2>
+    <p class="entradilla aparece">{e(cr["intro"])}</p>
+    <div class="rol-grid">{cols}</div>
+  </div>
+</section>'''
+
+
+def productos_html(co):
+    pr = co.get("productos")
+    if not pr:
+        return ""
+    fichas = "".join(f'''<article class="producto aparece">
+      {arte_reticula(300 + i, "arte-tarjeta")}
+      <span class="anos">{e(p["anos"])}</span>{f'<span class="sello">{e(p["sello"])}</span>' if lleno(p.get("sello")) else ""}
+      <span class="producto-tipo">{e(p.get("tipo", ""))}</span>
+      <h3>{e(p["nombre"])}</h3>
+      <p>{e(p["texto"])}</p>
+    </article>''' for i, p in enumerate(pr["items"]))
+    return f'''<section class="parte productos-sec" id="productos" aria-labelledby="t-productos">
+  <div class="wrap">
+    <span class="etiqueta">Producto</span>
+    <h2 class="titulo aparece" id="t-productos">{e(pr["titulo"])}</h2>
+    <p class="entradilla aparece">{e(pr["intro"])}</p>
+    <div class="productos">{fichas}</div>
+  </div>
+</section>'''
+
+
 def consultor():
     co = C["consultor"]
     tray = "".join(f'''<article class="tarjeta">
@@ -519,14 +594,14 @@ def consultor():
                  if lleno(foto) and (BASE / foto).exists() else "")
     contenido = f'''{portada_pagina("consultor", "01", arte_reticula(7), co.get("foto_cabecera", ""))}
 <section class="parte" aria-labelledby="t-intro-consultor">
-  <span class="marca-agua" aria-hidden="true">Consultor</span>
+  <span class="marca-agua" aria-hidden="true">{e(co.get("rol", "Consultor"))}</span>
   <div class="wrap">
     <div class="intro{" intro--foto" if foto_html else ""}">
       <div>
-        <span class="etiqueta">01 · Consultor</span>
+        <span class="etiqueta">01 · {e(co.get("rol", "Consultor"))}</span>
         <h2 class="titulo aparece" id="t-intro-consultor">{e(co["titulo"])}</h2>
         <p class="entradilla aparece">{e(co["entradilla"])}</p>
-        <p class="intro-acciones aparece"><a class="boton boton--lg" href="#servicios">Ver servicios</a><a class="boton boton--lg boton--linea" href="#contacto">Hablemos</a></p>
+        <p class="intro-acciones aparece"><a class="boton boton--lg" href="{"#metodo" if co.get("metodo") else "#servicios"}">{"Cómo trabajo" if co.get("metodo") else "Ver servicios"}</a><a class="boton boton--lg boton--linea" href="#contacto">Hablemos</a></p>
       </div>
       {foto_html}
     </div>
@@ -534,7 +609,11 @@ def consultor():
     {ilumya}
   </div>
 </section>
-{servicios_html(co)}
+{metodo_html(co)}
+{piramide_html(co)}
+{comparativa_rol_html(co)}
+{productos_html(co)}
+{servicios_html(co) if co.get("mostrar_servicios", True) else ""}
 {linkedin_html(co)}
 <section class="parte trayectoria-sec" aria-labelledby="t-trayectoria">
   <div class="wrap">
@@ -544,7 +623,7 @@ def consultor():
   {carrusel("trayectoria", "Trayectoria profesional", tray)}
   <div class="wrap">{formacion}</div>
 </section>'''
-    return head("Consultor de tecnología · Juanra Doménech", co["entradilla"][:155], "/consultor") + cuerpo("consultor", contenido)
+    return head(f'{co["titulo"]} · Juanra Doménech', co["entradilla"][:155], "/consultor") + cuerpo("consultor", contenido)
 
 
 def marcas_html(ci):
@@ -795,7 +874,7 @@ def aviso_legal():
     <li><strong>Correo:</strong> {e(L["correo_legal"])}</li>
   </ul>
   <h2>Objeto</h2>
-  <p>Esta web es la página personal de Juanra Doménech: presenta su actividad como consultor de tecnología y su actividad como ciclista.</p>
+  <p>Esta web es la página personal de Juanra Doménech: presenta su actividad profesional como {e(C["consultor"]["titulo"])} y su actividad como ciclista.</p>
   <h2>Propiedad intelectual</h2>
   <p>Los textos, fotografías, grafismos y diseño de esta web son de su titular o se usan con permiso. No se pueden reproducir sin autorización, salvo citas breves con enlace a la fuente.</p>
   <h2>Enlaces</h2>
