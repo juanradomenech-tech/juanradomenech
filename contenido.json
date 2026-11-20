@@ -1038,7 +1038,11 @@
       }
     ],
     "retos_titulo": "Marchas de 2026",
-    "datos_strava": "Fuente: Strava, consultado el 20 de noviembre de 2026."
+    "datos_strava": "Fuente: Strava, consultado el 20 de noviembre de 2026.",
+    "video_contacto": {
+      "mp4": "media/video/rodillos.mp4",
+      "poster": "media/video/rodillos.webp"
+    }
   },
   "cierre": {
     "titulo": "Hablemos",

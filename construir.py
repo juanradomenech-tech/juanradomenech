@@ -370,7 +370,7 @@ def tiempo_html():
 </section>'''
 
 
-def contacto_html():
+def contacto_html(activa=""):
     cie = C["cierre"]
     mail = C["contacto"].get("correo", "")
     acciones = []
@@ -382,7 +382,17 @@ def contacto_html():
     if lleno(C["contacto"].get("linkedin")):
         clase = "boton boton--lg" + (" boton--linea" if acciones else "")
         acciones.append(f'<a class="{clase}" href="{e(C["contacto"]["linkedin"])}" target="_blank" rel="noopener">Hablemos en LinkedIn</a>')
-    return f'''<section class="cierre" id="contacto" aria-labelledby="t-contacto">
+    fondo, clase = "", "cierre"
+    vid = C["ciclista"].get("video_contacto", {}) if activa == "ciclista" else {}
+    if lleno(vid.get("mp4")) and (BASE / vid["mp4"]).exists():
+        poster = vid.get("poster", "")
+        fondo = (f'''<div class="cierre-fondo" aria-hidden="true">
+    <img class="cierre-poster" src="/{e(poster)}" alt="" loading="lazy">
+    <video class="cierre-video" autoplay muted loop playsinline preload="metadata" poster="/{e(poster)}"><source src="/{e(vid["mp4"])}" type="video/mp4"></video>
+  </div>''')
+        clase = "cierre cierre--video"
+    return f'''<section class="{clase}" id="contacto" aria-labelledby="t-contacto">
+  {fondo}
   <div class="wrap">
     <span class="etiqueta">Contacto</span>
     <h2 class="titulo" id="t-contacto">{e(cie["titulo"])}</h2>
@@ -399,7 +409,7 @@ def cuerpo(activa, contenido):
 {cabecera(activa)}
 <main id="contenido">
 {contenido}
-{contacto_html()}
+{contacto_html(activa)}
 </main>
 {pie()}
 {asistente_html()}
