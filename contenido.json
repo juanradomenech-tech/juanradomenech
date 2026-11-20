@@ -1,0 +1,1372 @@
+{
+  "_ayuda": "Edita este archivo y ejecuta: python3 construir.py. Un campo vacío (\"\") o una lista vacía ([]) no se muestra en la web. Los textos marcados con \"revisar\": true los he redactado yo: cámbialos y pon false.",
+  "sitio": {
+    "dominio": "https://juanradomenech.com",
+    "nombre": "Juanra Doménech",
+    "titulo": "Juanra Doménech · Consultor de tecnología y ciclista",
+    "descripcion": "Más de 25 años en marketing, negocio y transformación digital. Hoy ayudo a las pymes a adaptar su gestión a la IA. Y cuando cierro el portátil, salgo en bici.",
+    "idioma": "es-ES"
+  },
+  "contacto": {
+    "correo": "juanra.domenech@gmail.com",
+    "linkedin": "https://www.linkedin.com/in/juanradomenech/",
+    "instagram": "",
+    "strava": "https://www.strava.com/athletes/1790674",
+    "agenda_url": "https://calendar.app.google/ssXw7ezBEgn77nco7",
+    "agenda_texto": "Reserva una reunión"
+  },
+  "legal": {
+    "titular": "Juan Ramón Doménech Casanova",
+    "nif": "21663949L",
+    "domicilio": "Omet, 3 · 03810 Benilloba (Alicante)",
+    "correo_legal": "juanra.domenech@gmail.com"
+  },
+  "portada": {
+    "consultor": {
+      "titulo": "Consultor",
+      "subtitulo": "Tecnología",
+      "frase": "25 años ayudando a empresas a vender, organizarse y decidir mejor. Ahora, con inteligencia artificial.",
+      "revisar": true,
+      "foto": "media/fotos/juanra-cafe.webp"
+    },
+    "ciclista": {
+      "titulo": "Ciclista",
+      "subtitulo": "Carretera",
+      "frase": "La bici es mi otra oficina. Kilómetros, puertos y constancia.",
+      "revisar": true,
+      "foto": "media/fotos/juanra-tienda.webp"
+    }
+  },
+  "consultor": {
+    "titulo": "Consultor de tecnología",
+    "entradilla": "Llevo más de 25 años en marketing, negocio y transformación digital: he dirigido el marketing de empresas que venden en más de 140 países, he creado dos empresas de software y llevo veinte años explicando gestión en aulas, radio y prensa. A principios de 2026 creé iLumya, una nueva empresa tecnológica, y a través de ella trabajo como AI Officer para pymes: el responsable de IA que una pyme no puede tener en plantilla. Y soy formador de equipos: preparo a las personas para que la tecnología y la IA se usen de verdad en el día a día.",
+    "revisar": true,
+    "cifras": [
+      {
+        "numero": "25",
+        "sufijo": "+",
+        "texto": "años en marketing, negocio y transformación digital"
+      },
+      {
+        "numero": "140",
+        "sufijo": "+",
+        "texto": "países en los que venden las empresas para las que he trabajado como consultor e interim marketing manager"
+      },
+      {
+        "numero": "20",
+        "sufijo": "+",
+        "texto": "años como formador de equipos, docente y divulgador de gestión empresarial"
+      },
+      {
+        "numero": "2",
+        "sufijo": "",
+        "texto": "empresas de software creadas: MKF y KlikTicket"
+      }
+    ],
+    "trayectoria": [
+      {
+        "anos": "1997 – 1999",
+        "nombre": "Huhtamaki",
+        "texto": "Mi primer puesto: asistente de exportación y de marketing."
+      },
+      {
+        "anos": "1999 – 2004",
+        "nombre": "Diagram Software",
+        "texto": "Marketing Manager: creé el departamento de marketing y lo dirigí."
+      },
+      {
+        "anos": "2003 – 2015",
+        "nombre": "MKF",
+        "texto": "Fundé Marketing Konsulting Factory: aplicaciones de gestión como servicio (SaaS) que el propio usuario podía personalizar."
+      },
+      {
+        "anos": "2005 – 2015",
+        "nombre": "Aulas, radio y prensa",
+        "texto": "Docente de marketing y gestión empresarial en COEPA, AIJU, AICE y AEC; «La Hora de la Economía» en SER Radio Alcoy y editoriales de Economía y Empresa en Grupo Zeta."
+      },
+      {
+        "anos": "2007 – 2014",
+        "nombre": "Mutua Levante",
+        "texto": "Marketing Manager: el plan de marketing, de diseñarlo a ejecutarlo."
+      },
+      {
+        "anos": "2008 – 2015",
+        "nombre": "Miniland Group",
+        "texto": "Marketing Manager en un grupo de puericultura electrónica y juguete educativo con presencia en más de 140 países."
+      },
+      {
+        "anos": "2010 – 2014",
+        "nombre": "Subvencionate",
+        "texto": "Desarrollo de negocio en una empresa dedicada a la obtención de subvenciones."
+      },
+      {
+        "anos": "2010 – 2011",
+        "nombre": "Plan de Novelda",
+        "texto": "Desarrollé para el Ayuntamiento el Plan Estratégico Novelda Desarrollo & Vanguardia 2011-2018 (N:D&V)."
+      },
+      {
+        "anos": "2015 – 2018",
+        "nombre": "Klikair Technologies",
+        "texto": "Creé y dirigí un CRM en modo SaaS."
+      },
+      {
+        "anos": "2015 – 2018",
+        "nombre": "iMarketer",
+        "texto": "Marketing Manager. «La percepción de las cosas es más importante que la realidad»."
+      },
+      {
+        "anos": "2018 – 2024",
+        "nombre": "KlikTicket",
+        "texto": "Propietario y gerente de la plataforma que optimiza la gestión de gastos de empresa. Vendida con éxito a un grupo de software."
+      },
+      {
+        "anos": "2026 – hoy",
+        "nombre": "iLumya",
+        "texto": "Creé iLumya, empresa tecnológica de IA para pymes, y desde ella trabajo como AI Officer."
+      }
+    ],
+    "formacion": [
+      {
+        "grupo": "Licenciatura",
+        "items": [
+          {
+            "anos": "1993 – 1998",
+            "titulo": "Marketing & Business Administration",
+            "centro": "ESIC Business & Marketing School",
+            "nota": "Licenciado en Marketing."
+          }
+        ]
+      },
+      {
+        "grupo": "Másteres",
+        "items": [
+          {
+            "anos": "2016 – 2017",
+            "titulo": "Data Management (Big Data & Business Analytics)",
+            "centro": "OBS Business School",
+            "nota": "Qué es el big data, cómo cambia las organizaciones y cómo sacarle beneficio."
+          },
+          {
+            "anos": "2016 – 2017",
+            "titulo": "Marketing Online y Comercio Digital",
+            "centro": "EAE Business School",
+            "nota": "Estrategias de comunicación, venta, captación y fidelización en internet."
+          },
+          {
+            "anos": "2009 – 2010",
+            "titulo": "Marketing Digital",
+            "centro": "CEPADE · Universidad Politécnica de Madrid",
+            "nota": ""
+          },
+          {
+            "anos": "2006 – 2007",
+            "titulo": "Internet y Comunicación",
+            "centro": "UOC · Universitat Oberta de Catalunya",
+            "nota": ""
+          },
+          {
+            "anos": "2002 – 2003",
+            "titulo": "MBA",
+            "centro": "EAE Business School",
+            "nota": "Liderazgo y transformación de negocios en entornos globales y cambiantes."
+          }
+        ]
+      },
+      {
+        "grupo": "Cursos superiores",
+        "items": [
+          {
+            "anos": "2007",
+            "titulo": "Expresión y Arte Dramático",
+            "centro": "Expresarte",
+            "nota": "Especialidad en comunicación no verbal."
+          },
+          {
+            "anos": "2001 – 2002",
+            "titulo": "Internet y Comercio Electrónico",
+            "centro": "ESINE · Alfonso X el Sabio",
+            "nota": ""
+          },
+          {
+            "anos": "1999 – 2000",
+            "titulo": "Dirección Comercial",
+            "centro": "ESIC Business & Marketing School",
+            "nota": ""
+          }
+        ]
+      }
+    ],
+    "ilumya": {
+      "mostrar": true,
+      "titulo": "iLumya",
+      "subtitulo": "Mi empresa tecnológica",
+      "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes. Mi trabajo como AI Officer lo desarrollo a través de iLumya: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hacen el trabajo cada día - \"Trabajarás como no esperas hacerlo\".",
+      "frase": "Adaptamos la gestión de tu empresa a la IA… y la hacemos evolucionar cada mes.",
+      "url": "https://ilumya.es",
+      "boton": "Visitar ilumya.es",
+      "logo": "media/marcas-propias/ilumya-logo-negro.png"
+    },
+    "servicios_titulo": "AI Officer: diez formas de trabajar contigo",
+    "servicios_intro": "Cumplir es el suelo, no el techo. Te ayudo a revisar, ordenar y formar, y sobre todo a sacar resultados: ahorrar tiempo, vender con más confianza y tener a alguien que se ocupe de la IA cada mes. Elige por la necesidad, no por el nombre. Todos los presto a través de iLumya.",
+    "servicios_notas": [
+      "Todos estos servicios los presto a través de iLumya.",
+      "Los servicios de Valor y Confianza se pueden contratar sueltos.",
+      "El AI Officer a tiempo parcial es la relación de continuidad: mantiene vivo todo lo anterior.",
+      "Todos los precios se cierran por escrito tras una primera llamada."
+    ],
+    "familias": [
+      {
+        "clave": "valor",
+        "nombre": "Valor",
+        "pregunta": "¿Qué gano con la IA?",
+        "servicios": [
+          {
+            "n": "01",
+            "titulo": "Sprint de ahorro con IA",
+            "frase": "Un proceso, un piloto y el ahorro medido en horas.",
+            "chips": [
+              "3 semanas",
+              "Fijo + variable por resultado"
+            ],
+            "resuelve": "Muchas pymes han probado la IA y no saben si les ahorra algo. Elijo contigo uno o dos procesos con muchas horas repetitivas, monto un piloto con herramientas que ya tienes o que cuestan poco y medimos el antes y el después.",
+            "para_quien": [
+              "Pymes que usan IA «a ratos» y no ven el resultado.",
+              "Equipos con tareas repetitivas: ofertas, correos, informes, atención.",
+              "Dueños que quieren un dato antes de invertir más."
+            ],
+            "incluye": [
+              "Medición inicial de horas del proceso.",
+              "Diseño del piloto y reglas de uso.",
+              "Formación práctica a las personas del piloto.",
+              "Medición final y decisión: escalar, ajustar o parar."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "3 semanas"
+              ],
+              [
+                "Formato",
+                "Mixto: sesiones remotas y una jornada en tu empresa."
+              ],
+              [
+                "Entregables",
+                "Piloto en marcha, informe de ahorro (horas y euros) y hoja de ruta para escalar."
+              ],
+              [
+                "Precio",
+                "Importe fijo, más una parte variable opcional ligada al ahorro medido."
+              ]
+            ],
+            "diferente": [
+              "Una parte de mi precio puede depender del ahorro medido. Si no se ve el ahorro, no cuenta como éxito.",
+              "No vendo herramientas: elijo la que te conviene."
+            ],
+            "limites": "No incluye desarrollo de software a medida ni integraciones complejas. La medición se basa en datos que aporta tu equipo."
+          },
+          {
+            "n": "02",
+            "titulo": "Agentes con control",
+            "frase": "Lanzar agentes de IA con permisos, aprobaciones y registro.",
+            "chips": [
+              "4-6 semanas",
+              "Proyecto"
+            ],
+            "resuelve": "Los agentes de IA ya envían correos, actualizan sistemas o preparan pedidos. Eso ahorra mucho tiempo, pero un error tiene efectos reales. Diseño contigo el agente y sus reglas: qué puede hacer solo, qué necesita aprobación y qué queda registrado.",
+            "para_quien": [
+              "Pymes que quieren automatizar procesos con agentes.",
+              "Empresas a las que un proveedor les ofrece «un agente».",
+              "Equipos que ya usan agentes sin reglas escritas."
+            ],
+            "incluye": [
+              "Mapa del proceso y punto de decisión humana.",
+              "Nivel de autonomía: sugerir, actuar con aprobación o actuar y avisar.",
+              "Permisos mínimos, registro y plan de pruebas.",
+              "Coordinación con quien lo implanta."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "4-6 semanas"
+              ],
+              [
+                "Formato",
+                "Talleres con el equipo del proceso y revisión técnica con el implantador."
+              ],
+              [
+                "Entregables",
+                "Ficha del agente, matriz de permisos, protocolo de aprobación y prueba documentada antes de lanzar."
+              ],
+              [
+                "Precio",
+                "Importe por agente o por proceso."
+              ]
+            ],
+            "diferente": [
+              "Estoy en tu lado de la mesa, no en el del proveedor que lo vende.",
+              "Cada agente sale con su «carné»: qué hace, qué no puede hacer y quién responde."
+            ],
+            "limites": "No programo el agente. Si un uso puede ser de alto riesgo, propongo una revisión especializada."
+          },
+          {
+            "n": "03",
+            "titulo": "Compra de IA sin sorpresas",
+            "frase": "Elegir herramienta y proveedor sin depender de nadie.",
+            "chips": [
+              "2-4 semanas",
+              "Proyecto"
+            ],
+            "resuelve": "Cada semana sale una herramienta nueva y todas prometen lo mismo. Te ayudo a definir qué necesitas, comparo opciones, organizo pruebas con tus datos y reviso las condiciones antes de firmar.",
+            "para_quien": [
+              "Pymes a punto de comprar una herramienta de IA.",
+              "Empresas con varias suscripciones que se solapan.",
+              "Quien renueva un contrato y quiere negociar mejor."
+            ],
+            "incluye": [
+              "Necesidades y criterios de selección.",
+              "Comparativa de tres a cinco opciones.",
+              "Prueba guiada con casos reales.",
+              "Revisión de datos, cambios de modelo, seguridad y salida."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "2-4 semanas"
+              ],
+              [
+                "Formato",
+                "Remoto, con una sesión de decisión con dirección."
+              ],
+              [
+                "Entregables",
+                "Comparativa, recomendación razonada, lista de cláusulas a pedir y checklist para la renovación."
+              ],
+              [
+                "Precio",
+                "Importe por selección."
+              ]
+            ],
+            "diferente": [
+              "No cobro comisiones de ningún proveedor. Recomiendo lo que te conviene.",
+              "Miro lo que suele olvidarse: qué pasa con tus datos y cómo te vas si cambias."
+            ],
+            "limites": "No sustituye la revisión jurídica del contrato por tu abogado."
+          }
+        ]
+      },
+      {
+        "clave": "confianza",
+        "nombre": "Confianza",
+        "pregunta": "¿Cómo convierto el cumplimiento en ventaja?",
+        "servicios": [
+          {
+            "n": "04",
+            "titulo": "IA de confianza para vender",
+            "frase": "Responder a clientes grandes y licitaciones sobre tu uso de IA.",
+            "chips": [
+              "2-3 semanas",
+              "Proyecto"
+            ],
+            "resuelve": "Los clientes grandes y las licitaciones empiezan a preguntar a sus proveedores cómo usan la IA. Te preparo las respuestas, una página pública sobre tu uso de IA y el argumentario para tu equipo comercial.",
+            "para_quien": [
+              "Pymes que venden a grandes empresas o al sector público.",
+              "Empresas con chatbots o contenidos hechos con IA.",
+              "Equipos comerciales que reciben preguntas sobre IA."
+            ],
+            "incluye": [
+              "Banco de respuestas para cuestionarios de proveedores.",
+              "Página «Cómo usamos la IA» para tu web.",
+              "Avisos de transparencia para chatbots y contenido (art. 50).",
+              "Argumentario y sesión con el equipo comercial."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "2-3 semanas"
+              ],
+              [
+                "Formato",
+                "Remoto, con un taller con el equipo comercial."
+              ],
+              [
+                "Entregables",
+                "Banco de respuestas, texto de la página web, avisos de transparencia y argumentario."
+              ],
+              [
+                "Precio",
+                "Importe fijo."
+              ]
+            ],
+            "diferente": [
+              "Uno mi experiencia en marketing con el cumplimiento: lo que haces bien, que se vea y venda.",
+              "Todo lo que se publica se apoya en lo que haces de verdad, sin promesas que no puedes sostener."
+            ],
+            "limites": "Requiere haber hecho antes una revisión de usos de IA (Revisión inicial o equivalente). No es una certificación."
+          },
+          {
+            "n": "05",
+            "titulo": "Simulacro de incidente de IA",
+            "frase": "Ensayar qué haces si la IA falla, antes de que falle.",
+            "chips": [
+              "1 jornada",
+              "Precio cerrado"
+            ],
+            "resuelve": "Un chatbot que da datos de un cliente a otro. Un agente que envía un presupuesto equivocado. Un contenido falso publicado con tu marca. Planteo el caso, pongo el reloj en marcha y tu equipo decide en tiempo real.",
+            "para_quien": [
+              "Pymes con chatbots, agentes o contenido generado con IA.",
+              "Empresas con datos personales sensibles.",
+              "Dirección que quiere saber si su equipo está preparado."
+            ],
+            "incluye": [
+              "Escenario adaptado a tu empresa y tus herramientas.",
+              "Sesión de 3 a 4 horas con roles reales.",
+              "Plazos reales: RGPD (72 h) y, si aplica, NIS2 y Ciberresiliencia.",
+              "Revisión de lo aprendido."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "1 jornada"
+              ],
+              [
+                "Formato",
+                "Presencial u online, con dirección, IT, atención al cliente y comunicación."
+              ],
+              [
+                "Entregables",
+                "Informe de mejoras y protocolo de incidentes de IA de una página."
+              ],
+              [
+                "Precio",
+                "Precio cerrado por jornada."
+              ]
+            ],
+            "diferente": [
+              "Se aprende más en una mañana de simulacro que leyendo un protocolo.",
+              "Es una forma sencilla de empezar a trabajar juntos y de ver qué falta."
+            ],
+            "limites": "No es una auditoría técnica de seguridad ni un análisis forense."
+          }
+        ]
+      },
+      {
+        "clave": "continuidad",
+        "nombre": "Continuidad",
+        "pregunta": "¿Quién se ocupa de la IA cada mes?",
+        "servicios": [
+          {
+            "n": "06",
+            "titulo": "AI Officer a tiempo parcial",
+            "frase": "Tener un responsable de IA sin contratarlo a jornada completa.",
+            "chips": [
+              "Mensual",
+              "Suscripción"
+            ],
+            "resuelve": "La IA cambia cada mes: herramientas nuevas, usos nuevos y normas que se mueven. Me incorporo a tu empresa unas horas al mes como responsable de IA. Mantengo ordenado lo que ya está hecho y te ayudo a decidir lo siguiente.",
+            "para_quien": [
+              "Pymes que ya han hecho la revisión o el plan de control.",
+              "Empresas sin perfil interno de IA.",
+              "Dirección que quiere un único interlocutor para la IA."
+            ],
+            "incluye": [
+              "Comité de IA mensual con dirección.",
+              "Inventario vivo y alta de nuevos usos.",
+              "Alertas normativas que te afectan.",
+              "Canal de dudas e indicadores trimestrales de ahorro y riesgo."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "Mensual"
+              ],
+              [
+                "Formato",
+                "Remoto, con visitas según el nivel contratado."
+              ],
+              [
+                "Entregables",
+                "Acta mensual, inventario actualizado, cuadro de mando trimestral e informe anual."
+              ],
+              [
+                "Precio",
+                "Tres niveles (Básico, Plus y Pro), según horas y número de sistemas."
+              ]
+            ],
+            "diferente": [
+              "El mismo papel que tiene una gran empresa, a la medida de una pyme.",
+              "Trabajas conmigo, no con una consultora anónima."
+            ],
+            "limites": "Las horas no consumidas no se acumulan, salvo pacto escrito. Los proyectos nuevos se presupuestan aparte."
+          },
+          {
+            "n": "07",
+            "titulo": "Dirección con IA",
+            "frase": "Que el dueño use la IA y decida con criterio.",
+            "chips": [
+              "6 sesiones",
+              "Bono"
+            ],
+            "resuelve": "La IA no se adopta si quien manda no la usa. Trabajo contigo, a solas, para que uses la IA en tu propio día a día y sepas decidir dónde invertir y qué no hacer.",
+            "para_quien": [
+              "Dueños y gerentes de pymes.",
+              "Directivos que van a liderar la IA en su empresa.",
+              "Quien quiere opinión propia antes de escuchar a proveedores."
+            ],
+            "incluye": [
+              "Seis sesiones de 90 minutos.",
+              "Tu propio «kit» de IA para correo, informes y reuniones.",
+              "Cómo leer una propuesta de IA y qué preguntar.",
+              "Plan personal de IA para tu empresa."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "6 sesiones"
+              ],
+              [
+                "Formato",
+                "Uno a uno, online o presencial."
+              ],
+              [
+                "Entregables",
+                "Kit personal de prompts y herramientas, guía de preguntas a proveedores y plan de IA de una página."
+              ],
+              [
+                "Precio",
+                "Bono de 6 sesiones."
+              ]
+            ],
+            "diferente": [
+              "Más de 20 años como docente: explico la IA con palabras de negocio.",
+              "Empiezas por tu propio trabajo, no por un proyecto de empresa."
+            ],
+            "limites": "No incluye la implantación en la empresa. Se puede continuar con el AI Officer a tiempo parcial."
+          }
+        ]
+      },
+      {
+        "clave": "sector",
+        "nombre": "Sector",
+        "pregunta": "¿Qué cambia en mi sector?",
+        "servicios": [
+          {
+            "n": "08",
+            "titulo": "IA en planta y máquinas",
+            "frase": "Preparar a la industria para máquinas y productos con IA.",
+            "chips": [
+              "4-8 semanas",
+              "Proyecto"
+            ],
+            "resuelve": "Mantenimiento predictivo, control de calidad con visión artificial, máquinas que integran IA. El Reglamento de Máquinas se aplica desde el 20/01/2027 y la IA dentro de productos regulados entra en alto riesgo el 02/08/2028. Te ayudo a llegar con tiempo.",
+            "para_quien": [
+              "Fabricantes de máquinas o equipos con IA.",
+              "Plantas que usan IA en calidad o mantenimiento.",
+              "Empresas que venden productos con software."
+            ],
+            "incluye": [
+              "Mapa de IA en planta y en producto.",
+              "Tu papel en cada caso: usuario, fabricante o proveedor.",
+              "Ruta hacia Máquinas (2027) y AI Act anexo I (2028).",
+              "Revisión de avisos de incidentes y vulnerabilidades (Ciberresiliencia)."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "4-8 semanas"
+              ],
+              [
+                "Formato",
+                "Visitas a planta y talleres con ingeniería y calidad."
+              ],
+              [
+                "Entregables",
+                "Mapa de sistemas, clasificación preliminar y hoja de ruta por fechas."
+              ],
+              [
+                "Precio",
+                "Importe según número de productos y plantas."
+              ]
+            ],
+            "diferente": [
+              "Une casos de uso con valor (calidad, paradas) y calendario normativo en un solo plan.",
+              "Pensado para pymes industriales, no para grandes grupos."
+            ],
+            "limites": "No sustituye a un organismo notificado ni la evaluación de conformidad. Los casos de alto riesgo requieren revisión especializada."
+          },
+          {
+            "n": "09",
+            "titulo": "IA en salud",
+            "frase": "Usar IA en clínicas y centros con datos de salud.",
+            "chips": [
+              "3-6 semanas",
+              "Proyecto"
+            ],
+            "resuelve": "Asistentes que redactan informes, chatbots de citas, apoyo al triaje. Ahorran mucho tiempo, pero tocan datos de salud y, a veces, software médico. Ordeno qué usas, con qué datos y qué reglas necesitas.",
+            "para_quien": [
+              "Clínicas, consultas y centros privados.",
+              "Empresas de servicios sanitarios.",
+              "Startups de salud que integran IA de terceros."
+            ],
+            "incluye": [
+              "Inventario de IA asistencial y administrativa.",
+              "Datos de salud: base legal y evaluación de impacto con tu DPO.",
+              "Si es software médico (MDR) o no.",
+              "Preparación para el Espacio Europeo de Datos Sanitarios (26/03/2027)."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "3-6 semanas"
+              ],
+              [
+                "Formato",
+                "Talleres con dirección médica, administración y DPO."
+              ],
+              [
+                "Entregables",
+                "Inventario, reglas de uso clínico, avisos a pacientes y hoja de ruta."
+              ],
+              [
+                "Precio",
+                "Importe según centros y sistemas."
+              ]
+            ],
+            "diferente": [
+              "Pone en el mismo plan el ahorro de tiempo de los profesionales y la protección del paciente.",
+              "Coordina las piezas: AI Act, RGPD, productos sanitarios y datos de salud."
+            ],
+            "limites": "No es asesoramiento clínico ni regulatorio de producto sanitario. No sustituye al DPO ni al organismo notificado."
+          },
+          {
+            "n": "10",
+            "titulo": "AI Officer para tu cartera",
+            "frase": "Que gestorías y agencias ofrezcan IA con respaldo.",
+            "chips": [
+              "Anual",
+              "Alianza"
+            ],
+            "resuelve": "Tus clientes pymes te preguntan por la IA y no quieres improvisar. Formo a tu equipo, te doy materiales listos para usar y me ocupo de los casos complejos que me derives.",
+            "para_quien": [
+              "Gestorías y asesorías con cartera de pymes.",
+              "Agencias de marketing y consultoras pequeñas.",
+              "Asociaciones empresariales."
+            ],
+            "incluye": [
+              "Formación a tu equipo.",
+              "Kit de materiales: cuestionario, reglas básicas, plantillas.",
+              "Sesiones para tus clientes.",
+              "Derivación de casos complejos con condiciones pactadas."
+            ],
+            "ficha": [
+              [
+                "Duración",
+                "Anual"
+              ],
+              [
+                "Formato",
+                "Alianza anual con sesiones periódicas."
+              ],
+              [
+                "Entregables",
+                "Kit de materiales, formación con evidencias y protocolo de derivación."
+              ],
+              [
+                "Precio",
+                "Cuota anual, más condiciones por cliente derivado."
+              ]
+            ],
+            "diferente": [
+              "Llegas a muchas pymes a la vez, con un respaldo especializado detrás.",
+              "Tu cliente sigue siendo tuyo."
+            ],
+            "limites": "Cada socio responde de los servicios que presta. Las condiciones se fijan en un acuerdo escrito."
+          }
+        ]
+      }
+    ],
+    "foto_cabecera": "media/fotos/juanra-portatil.webp",
+    "foto_intro": "media/fotos/juanra-ipad.webp",
+    "linkedin_titulo": "Últimas publicaciones",
+    "linkedin_posts": [
+      {
+        "fecha": "17 sep 2026",
+        "url": "https://www.linkedin.com/posts/juanradomenech_gu%C3%ADa-actualizada-cooralia-intelligent-works-share-7506295217550135296-EVQu/",
+        "texto": "Guía actualizada Cooralia Intelligent Works × Aquora Business Education sobre el AI Act post-2 agosto. Lo que estamos viendo en las primeras revisiones: usos de IA repartidos entre departamentos, sin inventario común y sin criterios uniformes de tratamiento. Sin ese primer barrido, cualquier requerimiento obliga a reconstruir con urgencia.",
+        "datos": "#AIAct"
+      },
+      {
+        "fecha": "15 jul 2026",
+        "url": "https://www.linkedin.com/posts/juanradomenech_aiact-gobernanzaia-iagenerativa-share-7483049506318635008-d5V-/",
+        "texto": "Llevo semanas viendo inventarios donde nadie ha revisado si las herramientas de IA generativa que usan llevan marcado nativo o no. La Comisión Europea acaba de firmar el Código sobre Transparencia del contenido con IA: a partir del 2 de agosto, es la referencia oficial para demostrar cumplimiento del Artículo 50.",
+        "datos": "#AIAct · #GobernanzaIA · #IAgenerativa"
+      },
+      {
+        "fecha": "8 jul 2026",
+        "url": "https://www.linkedin.com/posts/aiact-gobernanzaia-regulacionia-ugcPost-7480629924408528896-3WZl/",
+        "texto": "Sesión en la Cámara Alicante sobre las obligaciones legales del AI Act para pymes que ya usan IA: los 6 frentes a ordenar, el primer riesgo real (el Shadow AI), las zonas sensibles y las 9 evidencias mínimas. «La IA no se frena. Se ordena.»",
+        "datos": "Publicación de Cooralia Intelligent Works"
+      }
+    ],
+    "linkedin_fuente": "Publicaciones de LinkedIn, actualizadas a 19 de noviembre de 2026.",
+    "formacion_titulo": "Nunca he dejado de estudiar",
+    "formacion_intro": "Una licenciatura, cinco másteres y tres cursos superiores entre 1993 y 2017: del marketing clásico a internet, el comercio digital y los datos. Lo que enseño a los equipos lo he estudiado antes."
+  },
+  "puente": {
+    "titulo": "La misma cabeza, dos carreteras",
+    "entradilla": "Lo que aprendo en la bici me sirve en la empresa. Y al revés.",
+    "revisar": true,
+    "ideas": [
+      {
+        "titulo": "Planificar",
+        "texto": "Ni una marcha ni un proyecto salen bien improvisando. El recorrido se estudia antes de salir."
+      },
+      {
+        "titulo": "Medir",
+        "texto": "En la bici, kilómetros y desnivel. En la empresa, horas ahorradas y euros. Lo que no se mide no mejora."
+      },
+      {
+        "titulo": "Constancia",
+        "texto": "El rendimiento no llega en un día de inspiración: llega con semanas de trabajo. La IA en una pyme, igual."
+      },
+      {
+        "titulo": "Tirar e ir a rueda",
+        "texto": "Saber cuándo marcar el ritmo y cuándo dejar que el grupo te lleve. Eso también es dirigir."
+      }
+    ]
+  },
+  "ciclista": {
+    "titulo": "La bici es mi otra oficina",
+    "entradilla": "Ahí pienso, ahí ordeno las ideas y ahí aprendo a sufrir con cabeza.",
+    "revisar": true,
+    "cifras": [
+      {
+        "numero": "8.886",
+        "sufijo": "km",
+        "texto": "recorridos en 2026"
+      },
+      {
+        "numero": "172.068",
+        "sufijo": "m",
+        "texto": "de desnivel positivo: más de 19 veces el Everest"
+      },
+      {
+        "numero": "235",
+        "sufijo": "",
+        "texto": "salidas en bici este año"
+      },
+      {
+        "numero": "352",
+        "sufijo": "h",
+        "texto": "pedaleando en 2026"
+      }
+    ],
+    "retos": [
+      {
+        "ano": "22 mar 2026",
+        "nombre": "The Millars Gran Fondo",
+        "dato": "155 km",
+        "texto": "UCI Gran Fondo World Series, Castellón. 2.210 m de desnivel a 35,1 km/h de media. Clasificado para el Mundial.",
+        "polyline": "wf~rFfoE|XxaAeG|m@`tAph@vVsR~jBz@~d@pp@rdAbZn]jXtoAtZbHjl@p[xdAcYnx@{DvpAyItPNnYgVds@_AnR{a@lq@y~@xeF{d@~kAxSdCjG~Gc@lKt`BmDb`A~H`QlL}Upl@m@f]pOvn@qThjCnf@`i@nJpc@bMrMfIjh@`_@n_BqNxj@eBho@lQbg@~@xg@iNrb@_v@`_@{T`l@wI~@}ArMwAyEsFbEM~YiQzR[h_@jIjRkE_AcHtVrGaDCfQ{RzFS~g@a\\fBzBnNgImAaCxJgGkRpEo[aS|F}Joz@nBsRcIuGsIu`@aQbBg]tUqCyIkYfA{]mThCaI{CqL_NaCeCkJ}FcfAqVuVrB_OcTeDeSuh@aHeg@u\\yTqB_e@_Uu`AgQ{RkBwRqMrI_Bmj@}nAzOeUzZaUrLyZhh@tXhqAiHjZtBnh@sw@dUSrNwTbOOrScGjNqP}BwDfK{LvB]eJoL}DqZka@uNpP`IbUw[nRi[oQiYfQ{GfYrBtn@fHrUg[be@sS_L|ItDwF`SaWt[iCxTeGrAmWeMoUjN}QcCN_P_o@_RdPoNtI_DeQXrS}Ihf@{@wGySvHmGvKml@_Rp@qZjb@}Vz@aLyDQwLcJsA{@_LcJoDcRki@s\\kSoQdAc]vTmDpL_O|DcLcL?}IoMcBkHgMyf@sImD_Z{H}QrJc]bFjBlD}PvIyCzAu]|GqMeAiNoTjFsWuDcFhGmNgFmGzl@aQgb@eSsBoHfRfAuZ}IsL{HpIm_@pApAkLdXeIwUee@oJjQcOtCo[{Yal@k@cFyFw@yDvNmByKR~A_MlLoEzDkg@vIlH~^mE_WsQ`FcJToe@du@kvAsCac@`Y}a@oBeu@|CuZbYmx@zIqQl\\kM`h@pFhq@_o@xYnKvGrUlRlGxAoK~Gw@r[b]vY{TxQvAqEdk@aLfY~b@vVyCxOfQdXlJzl@bl@jf@hFbTrZdb@f\\GhKxMd`@YdE|G~LmN}CpQjp@dm@jCrVj`@rQq@}P~MwZyLkL~IoOcGm[nEab@oTeVqTrD~E_Q~OaENgKsHiO}LhGv@eRmKqB_Fw^xu@pHtAoEuEuZvWlFuKkd@aGmBlAcHcNug@dGsLlg@yJySirAbKic@mA{b@pGgP_GkfA~Ua_@nDeYcH}ZdOcDpQsj@xGam@jXcItSwu@~f@f^`u@}PeKek@vG{SrMgsBlRiZdi@}aBqp@gi@nFyYCgp@fPka@tYoU|Mur@y@oWcW}y@",
+        "url": "https://www.strava.com/activities/17818401152"
+      },
+      {
+        "ano": "6 jun 2026",
+        "nombre": "Sierra de Gúdar",
+        "dato": "3.040 m",
+        "texto": "Ciclodeportiva en Alcalá de la Selva: 148 km y el día de más desnivel del año.",
+        "polyline": "wukuFptjCdFqI}XsZeQsDoI_Lq`@z@ov@mP_cBpaAog@bFoYx`@kl@l_@ci@?qU|JsSBgRvTeYoHwMfD{F_O_vA~\\{`@Py`@gEcQ|Pab@vK_MJcNmM}B|HuTdLtAaNmEkDdFgWe@_o@_EoNjKok@hJ{NqDkJc@o`@pHgYgJiNkAoW_g@uf@uRgH_H}Vkl@@kZoG_gB_hAzQo]lKNb[gUjCcf@rOiq@nj@u{@hUmKba@KbHl@fHpLnXfCcPiTwEcRmj@gYuEs|A^wm@pEcVsPaDuVsRsGqYyGcDeJaToByTkIqSnCaMpK{KkN{GtNuPvMoaAvAeYsDe`@dOct@jYov@p@qq@zRmg@~~@lI|SdPxJd`@tH`{@jObZmD|@|FhG_EZ~Ot\\lDjf@vNxZhXmMrNbF`k@uUjPzBpc@n\\ro@~Mzr@`m@~Ybw@hq@lr@~W~r@t}@tdAcC|Xwc@tu@jZeFhc@|Ib_@wXbKnImRr^kJdb@m@bNvFhDiCdLkMbC_XjVmc@zt@wLJk@vIeLfJq@`QsZbo@{IzCqKb]kPnOaFlSyGnnAvAjc@w^v`@mJ`o@^tUdOvd@i@`Rl[f@rR`Nn`@nEdZ}CxR{MzOxErYc`@rf@yE~cBsaA~u@jPj_@cAhJbLzOzChZt[wM~[iAfc@bIrVqQjR_^~LcOxc@{MjIaA~UaPrXk_@dO{`@v]}IiAkd@ji@hBzM{d@rv@}K`r@aCxi@i]vj@{G|k@_n@v`BkLtfCgVz[iStB_NxO`IbHfCrMhD[vd@rf@je@_L`\\rC`M_MxOYn\\s[de@hBdViRlk@vArn@{Mlm@iq@ZiJzW_T|Cg^kDuNxIcKz@uMdLsAdIeOtn@kb@vNwBz{ArFUbEju@yWp_@bAbZwJb[bClNjNX{KqDcIlIkLp_AoN|QgOzIqRjP{EzK}WdOgFhEiPn`@uQlCqOaCyRpEoPfRaIda@ThHiS~AwZjn@at@t`@ukAwi@~A_c@wXaIg[qS[yJiJvCaUiFoZeg@eWsXa^k^_Q{XrXiOhFkdAa@uHnGeO}UmK~BiH}HeFlNmGXiT_o@oC|QaIr@kmAch@oKy@iU~SiQzBaEyS^sQkH_Vf@}M{FiEgh@zCqCxMgU|QuN_W}@wc@eUqr@iGwIcGlBla@sqA{H~CvHmMvCk\\qDnB`AaKzIiGmJiHxYgiAdGwz@_PmG_Gy]aSiEcK{k@e\\fU",
+        "url": "https://www.strava.com/activities/18809016208"
+      },
+      {
+        "ano": "18 jul 2026",
+        "nombre": "Vielha Cycling Tour",
+        "dato": "84 km",
+        "texto": "2.360 m de desnivel en el Pirineo. Séptimo de la general.",
+        "polyline": "aiscG_gzC}EzKiQxEiNQ|DdDUbBaQcD_XiM_JzCeEnVxGoHeJ|UkNfWoMlNuRpf@LfLeI~V_DpWqPbd@}Cd[nHv`@Pf_@}EjPqD`v@zRmNjXJpDnEtKuFiElYvFlH~IzQbMrGoNPmGaD{FoMmHb@{HsJkBiGuLb@oGvEkLfc@yLdR}IkAgIjG^cN{@aMaCrBoCfXyI`U[lVyAdJii@hv@iYrRqNlE_PvNkGpKyNbG{VbZep@jKiL@wI_FuGgTgL_Dj@vD~GtDtAdO|CfDpK~DlZxBuZpCsLwD_Hp@?fB`Hw@jOfJjNpB{OlAmIcGiDd@qGnDiHrMdRyKpAhEpGnFh_@vFrKd]fE~E\\fFyAdFt@jFvCdDfDAdDzS~BrAhCsCkDdKyF}EcCtF{Bp@`FrEuChE{LkEkB}Es@vEeCiGuGjBf@zT`D~I_Alw@vH}`@_@pTlJzPWxPaBtEpE_@qDbMaCpT~BnIiFpq@|A|LcBfUvCmGvFfJqFuAhBpM`AuDnAhi@aDrWaR~Q_EsCsOtJke@tOuCHOoNs[UiZeM~Apw@rPvArKgDtD|OpO_Jd@w[hi@iPvO_K~D~CxRcSbDy\\wA}c@{@zDmBoMjFbBwF_KoCpH`BsV{AmJhFur@aCqI~B}TvD}LyE\\vBaJJ}LoJgPJsU}Gza@t@sy@aDcHg@cUvFgBhDnGh@uEfB|EnLpEnDiEkFuExFiH~FvEtDmJi@sAiB~DoB{@eD_TkDGkD{Dk@_F~AsEQmEmFuHmJk[oG{CyWkBcGgFqAmE{N~FkBzC`I}MpJ}DtI`GdQiA_N_C}OqJ}GbAFeBvGe@|LzDtOcDhGnApAcB_ZgBcLgEuC{CaByOuGaDS_EyZeN}BiGi@{EoBu@~NiKhRK|I`GfEu@pNdWvEp@mFgHIqIqBwFx@aIRlHvG|IwAoYhDbNrKjNlEfAqDwDs@sExJtIoGuNfJbJnHvBn@kC_Dh@}IyKq@}NmJcYrM~K^zE`HrG|FDlK_NbCmAbGKbEwKlFkFjCmJrOG_@_GnBqP|FqK`WoHrD{DHeDd@xE{AdBfBO^cFvFsAt@ySjNwr@~DuGt@iGvCvBkA{DbCiGX}QdCqJv@sRs@qTlB~BdClOJ}SsAeMfA`CzC]jDxHWoNnC|Fj@mA_BgHpEbDgBsDqD}[`CrDmAaHpKpY}BoU|BpDNsOz@dHlCcEg@aPxEa[_RlZlMic@HgHcB`G_AsGy@bAz@uHdFsSbHyHnDwc@nCgC_B|FlAnKdCqTRzObAmQ`B`@xGwFtCeHs@|D`C}@dQ_\\dGsEpJuOrD_RvKwCnEyRtNcMtXiFll@xGjOyJ",
+        "url": "https://www.strava.com/activities/19361738810"
+      },
+      {
+        "ano": "25 jul 2026",
+        "nombre": "Tour Cervatxo",
+        "dato": "94 km",
+        "texto": "1.727 m de desnivel a 29 km/h de media.",
+        "polyline": "cwlkFrlaAkIeFtG_H|G}Zg@{LfD{DgBuLvFqIgBoPaRuKsOdEgEqNr@yI}EkIhC_LkFqNV_YiB{CdIyTcJmEcKeOwFcAfDqFbBsQeAmFoG_BaHyLyCil@kHqQcHme@eDsEtDiFeYxJkIgR}Hab@_GsJ_Kp\\gMaOc@xCuSh@eDvZpA~HkLo@cDlDgLmFuLyUyFlBkCjKiB_SeNpXeBmBuCeQ}@zJya@nEeIsGqBaO}JsAuIyK{Bmk@NiSwFaI_DyQyKmOa@sKmJa\\r@cKwDeNeFgLwEnC`C_QsCcHfCyDuHqM\\aTiLiUZmDdGwA{JwR~Lul@_Ceg@@ev@sFwViIgOkAib@}I}HrA{HwHs@\\kGbN_WkE_Ak@iGpHiPfIga@|F_NjKmBhAbHpLxFbAtHzDvD~m@fc@zPnT`Hj@tDpL~FrAj@hKdLlQ``@xU`Rv]dVzS~AnGvKqG~MxF|EyO~Lz@N{_@nCyCdJ~DnFiNq@kJdFcE}EeN|CcRvOo]zSr@nBcNfD{DqEeIA}Ut@uPfGcMGsKuOkNiEaaA_HoZ|FkTsG{g@Jgt@tKmb@b@k^nHkUlG_HgIgV|Bw`@zMyn@rRq]jIyYg@eFvFuXi@m_@vR~RxOv@xBwAfBsTzNxAxCcEhTkNoC`OzAvFcE@iBrEyCuAcAbFwFnBcBdKrHxGtFaF|DzB?bTbQ}e@jIaJOiFbFoQnEgHWkRsBmFfAiUpJbf@`RdTtHt[y@bGrFvS|DnCeAvGvKvO_B|ErGpJ_@fP`DzBhCxRlD`GiCjItApIqCnMdElIdDqIjEy@k@~LrQpSy@hOnChFb@tLdCfBd[qJ`AkNdN_KzClA|CxJvIsEt@d@eKhDcGoLqMdMxEtEeAjJ}TrHiQnO_RhAiD_LyEfAaE|Eg@zRyFjDmC~XuEtF{Dd^}@pg@jAxCwB|F_Abd@kGnh@\\ji@tBlVvL|Q{GrYdCvH_FnFxE|GmEhJ|GcBjB`DtEcDhBzUrEsAdAhGeFdYuKjRhBlK_LuImJvZmC`PiG`Gl@vW_CzIyX`E|ExFaCxNfFoBrLjVoFlF|LnISrF}CGc@tCfErAyIjBuKkHjChSlI`Py@pK_EhHeGcHdAhHkCjOaFv@_A`IwO|D{BlIfAfMcFlJzBtGiNdM}@vXpDtX_DvIj@zN}Frc@`ArQkCjd@pAr^oCbNkKl[uM`OgBfHeFtBePcJeb@wg@}LvAsDxUsDfDvHdUnL~h@`Dvl@~OnOlAdEwAnRgD|GdFh@hKfOhJlE}HbU`B|COfYbFzMiCjL|EfIs@zHfDjN~PyCpInBfGlHdBvOuFvI`BrMaDxCo@`XkEtOsG`IzH`E",
+        "url": "https://www.strava.com/activities/19456173913"
+      },
+      {
+        "ano": "19 sep 2026",
+        "nombre": "Gran Fondo Alberto Contador",
+        "dato": "138 km",
+        "texto": "Oliva: 1.850 m de desnivel bajo la lluvia.",
+        "polyline": "chllF`vJvWlYo~@b{AsW|n@qApTsWre@rSvLd[h}@`TkMh~Ci|@~o@f[nZ~EwW_v@fUgS|vAexBh\\|E|VMiGsJMiWgLgC{CyJ~C~GnMYdr@{{@zSyGj\\xA|Yme@hOlb@rOfNlQrf@pVv[vv@tVdt@kC`|@ud@z[vOv[yZ~a@}AnB}]rBt[|JhH~XdAj\\qJjNpQhIyHzUjVlEh\\xLyTzZt[|Ov@nEcWhOfA`YeTq@xVeMbC}KtTxGvHhM{AY`Tfi@atAy@cp@nJjf@dRlTpFbc@tM`i@rH`HrDtQ[`PnM`^{Dlc@zDxHrJmKg@dMrQvSrB~c@f_@eGhAmNnO_K}LxMvEzEqAzJeg@nXsQdAkEgLoIfFkAlT_GjDgJza@kRlaDVli@tBpVvLfR{GhYbCbIaF|FbFxFwEfJzQ}AvBfV`EeBpAtGyRdl@hB`L{KcJkW~s@iAfb@wXfEpE`G}BrNbFiBrL|UiFnF|L`JyEtJhEvAaItBoLoHzM`d@_A~K}DzGcGoG}@zWsXnP}G|b@rBnHiNnMtBrr@qJ~}@F|vA{F|WlMje@pD`fArJtNMxZhFeAvMfMgNhTj\\zMgGrPyCln@|EjNzIgCbGlHhBpUsJbQDrj@sHrEdDjBaEvJlHtX}InGfMtA|Nv`AeAfS|FnSie@nq@KxNcFeMmVr]gPlD?vR{OnN{\\yHwAvMw^_CyUnE{CmQdCoGwKsF}IxKwHeIYxPwElBaIwP|AgMmD_GzJ{H_HqTa@wd@wTwNzBsTkEcPob@_Q}Sel@kPzBwH}P}BjNoAkSqDbTg^tPkEgVpGs]{F{L`AiKcFFOeQkQmOrDsIeLcVxAaRkF~F_AySgOkIxQwK{GyJiKq@h@}H{K}TpOiHvEwPzNsEpJaSMqv@uNmT~EuZaAuZoLiWwUsOeBc_AqXcl@wOidA}E{KsEtCzBcQMeNsHoMXoTgLiU~GuFuJ{R|Lwl@yBu}AaQqg@mAmb@}IyHvAwHyHw@bO{_@{FyHfZi`A}IwWiKwOuNoeAjA{d@xJxIk@kI}G}Tui@}c@rUm[qJcIkCkZeKxRdH|DaA~GoN_L~Dsb@cNol@iCrFcOa@Pf_@{FeKlA}XiH`OqAoGrDw@aHiTyNrKyI|VeBoQkE{@cAxTaKfIpFpPaBrOeb@bYwJ}@kf@mm@`@}He_BijAyTcB}g@qZq_EnfAgVg{@aTuJlWoe@tAqTbX_p@z}@_zAeXcZ",
+        "url": "https://www.strava.com/activities/20241506399"
+      },
+      {
+        "ano": "7 nov 2026",
+        "nombre": "La Nucía · UCI World Series",
+        "dato": "130 km",
+        "texto": "2.462 m de desnivel a 31,1 km/h de media.",
+        "polyline": "m`sjFvgWpIbJfC|Tfd@VbQqQtb@}Ehw@xK`MpObMm@z{@nZgg@lf@sg@`oAzCvYf\\di@`Jn_@Bh\\{GdKrOn_@_Gt@pSlnAg@rh@_HzEeCjRj@vdAqTjW@bSuLr]jBt^kZvn@Cdo@lPzV~Gh`@_RbYt@zLcRdM{UoJwOlGnKeBpb@pY`LxN{Dls@{V|E{KzPoPuA{N~u@uTtShJ`QAzf@zEjJlIrEwQsEsIxR|GjF|EhZgMFaAvWmIuNqExb@gEcJqWlESdUeQoYaLvLcAgOyH_BjBsMaToVoPx@wA}NaQiEuByHgIxFwEeM`EmLmOSY}XeN{PmIfg@aNjTfEnH{i@rHkS|S}ImG{D~I|]nx@B`IlShE}b@pYn@rMwLxF`NjXgF`PdQb\\qBvRw`@mGuZ{e@kUiIyOeWmOuG{ClJi]rMuZvz@iYpMeTtb@aGyl@uBdg@eNxStDsb@sJlWDlQcGeMnCtPaIyBqNtQ}CkFmL~X_^le@{l@pRqh@mn@}DlC}Js\\yJdG?mL{Kf@w@oQgD`PsS{_@ia@cNg^me@cJiFiFjG_S_CdBuGeZ{^NsO{O}KjOma@z@ge@pFyHcByPgRsKkO`EkEuNiDaTmDoz@|HuT}]wWxFw[_RoTgD{l@mVk~@tJk\\vKoAhq@ds@v[_]hOoi@I_wArJ_~@wB_r@rNoM}B_HrGwb@~XkQv@aXvFtGnEgHz@sK}Msc@dShGqAsGdFiEeMgK`FqGuLoV}E~BtBeO{EsEzW}HaOcE_b@~Qou@~C_e@s_AwNiIcC_RuOyD{Jkc@}@y]|FcPuEaJLe\\dIg\\y@{I_NyI}MgvA|E}[oG{e@@mt@~Kee@z@ca@zO_[aIgVxBk`@vM_o@d]ux@bDg`A~R|RbPt@nEkWbOrA~XeTs@vVeMhC}K|TjHhHzL{AE|Snh@gtAw@{o@pJhf@zQ`TnRlfAlHxUxGdK_@bPrMh^aEjb@xDnIzJgKo@pLzQhTfE|f@p\\gJdAiNzM}JtHtLdFaAaDs_@pQs[|HMzDqSnR{HiP|\\rX}FSz_@lSvR{BbDbJl`@{BrItEfI}IhKxPgGpItLdcAgu@tYxLtGsNhKs@~UjCtCnJzNxBtAhNuFlHhKlBpHhX}ArXnH`Ipa@wDdJaLxi@AnQ~[bYj@rN~p@dRj@nIhQpViVaG_PbFaQxMqAbr@zVrBe[nHP",
+        "url": "https://www.strava.com/activities/20919506039"
+      }
+    ],
+    "proximamente": "Estoy preparando esta parte: mis marchas, mis puertos y mis kilómetros. Muy pronto.",
+    "marcas_titulo": "Marcas con las que ruedo",
+    "marcas": [
+      {
+        "nombre": "Specialized",
+        "url": "https://www.specialized.com",
+        "logo": "media/marcas/specialized.svg"
+      },
+      {
+        "nombre": "Rapha",
+        "url": "https://www.rapha.cc",
+        "logo": "media/marcas/rapha.svg"
+      },
+      {
+        "nombre": "SRAM",
+        "url": "https://www.sram.com",
+        "logo": "media/marcas/sram.svg"
+      },
+      {
+        "nombre": "226ERS",
+        "url": "https://www.226ers.com",
+        "logo": "media/marcas/226ers.svg"
+      },
+      {
+        "nombre": "POC",
+        "url": "https://www.pocsports.com",
+        "logo": "media/marcas/poc.svg"
+      },
+      {
+        "nombre": "WHOOP",
+        "url": "https://www.whoop.com",
+        "logo": "media/marcas/whoop.svg"
+      },
+      {
+        "nombre": "Garmin",
+        "url": "https://www.garmin.com/es-ES/",
+        "logo": "media/marcas/garmin.svg"
+      },
+      {
+        "nombre": "LOOK",
+        "url": "https://www.lookcycle.com",
+        "logo": "media/marcas/look.svg"
+      }
+    ],
+    "parrafos": [
+      "Encima de la bici no hay pantallas, ni notificaciones, ni reuniones. Solo el ritmo de las piernas, la respiración y la carretera por delante. Al cabo de unos kilómetros el ruido se apaga y la cabeza empieza a hacer su trabajo de verdad: conectar cosas que delante del ordenador no se ven.",
+      "Un problema que en la oficina parecía un muro se ve distinto en mitad de una subida. Con el pulso arriba no hay sitio para lo accesorio: solo queda lo importante. Por eso vuelvo a casa con las ideas ordenadas y, muchas veces, con la decisión ya tomada.",
+      "La bici no me quita tiempo de trabajo. Me lo devuelve mejor aprovechado."
+    ],
+    "cita": "Salgo con un lío en la cabeza. Vuelvo con un plan.",
+    "foto_cabecera": "media/fotos/juanra-ruta.webp",
+    "foto_intro": "media/fotos/juanra-bici-brazos.webp",
+    "hitos_titulo": "Rumbo al Mundial",
+    "hitos": [
+      {
+        "etiqueta": "Logro",
+        "titulo": "Clasificado para el Mundial",
+        "lugar": "UCI Gran Fondo World Championships · Niseko, Japón · 2026",
+        "texto": "Me clasifiqué en The Millars Gran Fondo de Castellón, la única prueba en España de las UCI Gran Fondo World Series.",
+        "foto": "media/fotos/juanra-medalla-uci.webp"
+      },
+      {
+        "etiqueta": "Próximo reto",
+        "titulo": "Clasificarme para Francia 2027",
+        "lugar": "UCI Gran Fondo World Championships · Haute-Savoie, Francia · 2027",
+        "texto": "El objetivo de la próxima temporada: volver a ganarme la plaza en una prueba de las UCI Gran Fondo World Series.",
+        "foto": ""
+      }
+    ],
+    "cifras_nota": "Datos de Strava del 1 de enero al 20 de noviembre de 2026.",
+    "ultimas_titulo": "Últimas salidas",
+    "ultimas": [
+      {
+        "fecha": "20 nov 2026",
+        "nombre": "🐌 & +postureo!!",
+        "km": "21,4",
+        "desnivel": "456",
+        "tiempo": "55 min",
+        "velocidad": "23,4",
+        "url": "https://www.strava.com/activities/21059891196"
+      },
+      {
+        "fecha": "18 nov 2026",
+        "nombre": "Bicicleta por la tarde",
+        "km": "35,7",
+        "desnivel": "679",
+        "tiempo": "1 h 28 min",
+        "velocidad": "24,5",
+        "url": "https://www.strava.com/activities/21036124185"
+      },
+      {
+        "fecha": "16 nov 2026",
+        "nombre": "Positioning 🤣🤣 postureo mola+",
+        "km": "21,5",
+        "desnivel": "468",
+        "tiempo": "54 min",
+        "velocidad": "23,8",
+        "url": "https://www.strava.com/activities/21009923148"
+      }
+    ],
+    "retos_titulo": "Marchas de 2026",
+    "datos_strava": "Fuente: Strava, consultado el 20 de noviembre de 2026."
+  },
+  "cierre": {
+    "titulo": "Hablemos",
+    "texto": "De IA para tu empresa, de una charla para tu equipo o de una ruta en bici."
+  },
+  "_ayuda_marcas": "Logos: pon el archivo oficial de cada marca (SVG o PNG, versión blanca o negra) en media/marcas/ con el nombre indicado en \"logo\". Si el archivo no está, se muestra el nombre de la marca en la tipografía de la web.",
+  "_ayuda_servicios": "Servicios copiados de la web antigua (JD_Web_Propuesta_de_valor_v8.html, 19-11-2026). Quitada la mención a la intranet de cliente y la nota de la Revisión inicial AI Act (esa sección no está en la web nueva).",
+  "analitica": {
+    "ga4_id": "G-3RP4GH70DX",
+    "_ayuda": "ID de Google Analytics 4 (G-...) o contenedor de Google Tag Manager (GTM-...). Vacío = sin analítica, sin cookies y sin aviso."
+  },
+  "asistente": {
+    "mostrar": true,
+    "nombre": "Asistente de Juanra",
+    "estado": "Respuestas al momento · Juanra contesta por correo",
+    "saludo": "¡Hola! Soy el asistente de Juanra. Te cuento qué hace, cómo trabaja y cómo contactarle. ¿Qué te interesa?",
+    "foto": "media/fotos/juanra-cafe.webp",
+    "inicio": [
+      "servicios",
+      "ilumya",
+      "formacion-equipos",
+      "precios",
+      "ciclismo",
+      "contacto"
+    ],
+    "temas": [
+      {
+        "id": "servicios",
+        "boton": "¿Qué servicios ofreces?",
+        "claves": [
+          "servicio",
+          "servicios",
+          "ofreces",
+          "haces",
+          "ayudar",
+          "ayuda",
+          "trabajar contigo",
+          "consultor",
+          "consultoria"
+        ],
+        "texto": "Trabajo como AI Officer para pymes en cuatro líneas: Valor (ahorrar tiempo con IA), Confianza (vender con garantías sobre tu uso de IA), Continuidad (alguien que se ocupe de la IA cada mes) y Sector (industria, salud, gestorías y agencias). Son diez servicios en total.",
+        "siguientes": [
+          "valor",
+          "confianza",
+          "continuidad",
+          "sector"
+        ]
+      },
+      {
+        "id": "valor",
+        "boton": "Ahorrar tiempo con IA",
+        "claves": [
+          "ahorro",
+          "ahorrar",
+          "horas",
+          "productividad",
+          "agente",
+          "agentes",
+          "automatizar",
+          "automatizacion",
+          "herramienta",
+          "proveedor",
+          "comprar",
+          "ahorrar tiempo",
+          "perder tiempo"
+        ],
+        "texto": "Para ganar con la IA hay tres servicios: Sprint de ahorro con IA (3 semanas: un proceso, un piloto y el ahorro medido en horas), Agentes con control (4-6 semanas: agentes de IA con permisos, aprobaciones y registro) y Compra de IA sin sorpresas (2-4 semanas: elegir herramienta y proveedor sin depender de nadie).",
+        "siguientes": [
+          "precios",
+          "contacto"
+        ]
+      },
+      {
+        "id": "confianza",
+        "boton": "IA de confianza",
+        "claves": [
+          "confianza",
+          "cumplimiento",
+          "normativa",
+          "ley",
+          "ai act",
+          "reglamento",
+          "licitacion",
+          "licitaciones",
+          "clientes grandes",
+          "incidente",
+          "simulacro",
+          "riesgo",
+          "seguridad"
+        ],
+        "texto": "Cumplir es el suelo, no el techo. IA de confianza para vender (2-3 semanas) te prepara para responder a clientes grandes y licitaciones sobre tu uso de IA. El Simulacro de incidente de IA (1 jornada, precio cerrado) ensaya qué haces si la IA falla, antes de que falle.",
+        "siguientes": [
+          "precios",
+          "contacto"
+        ]
+      },
+      {
+        "id": "continuidad",
+        "boton": "AI Officer cada mes",
+        "claves": [
+          "ai officer",
+          "tiempo parcial",
+          "mensual",
+          "suscripcion",
+          "responsable de ia",
+          "cada mes",
+          "continuidad",
+          "direccion",
+          "dueño",
+          "gerente",
+          "directivo",
+          "mentoring"
+        ],
+        "texto": "Con el AI Officer a tiempo parcial tienes un responsable de IA sin contratarlo a jornada completa: suscripción mensual que mantiene vivo todo lo demás. Y con Dirección con IA (bono de 6 sesiones) el dueño aprende a usar la IA y a decidir con criterio.",
+        "siguientes": [
+          "precios",
+          "contacto"
+        ]
+      },
+      {
+        "id": "sector",
+        "boton": "IA para mi sector",
+        "claves": [
+          "sector",
+          "industria",
+          "fabrica",
+          "planta",
+          "maquinas",
+          "maquina",
+          "salud",
+          "clinica",
+          "clinicas",
+          "sanidad",
+          "gestoria",
+          "gestorias",
+          "agencia",
+          "agencias",
+          "cartera",
+          "asesoria"
+        ],
+        "texto": "Hay tres servicios por sector: IA en planta y máquinas (4-8 semanas, para preparar a la industria), IA en salud (3-6 semanas, para clínicas y centros con datos de salud) y AI Officer para tu cartera (alianza anual para que gestorías y agencias ofrezcan IA a sus clientes con respaldo).",
+        "siguientes": [
+          "contacto"
+        ]
+      },
+      {
+        "id": "formacion-equipos",
+        "boton": "Formación para equipos",
+        "claves": [
+          "formacion",
+          "formar",
+          "formador",
+          "curso",
+          "cursos",
+          "taller",
+          "talleres",
+          "charla",
+          "charlas",
+          "conferencia",
+          "ponencia",
+          "equipo",
+          "equipos",
+          "plantilla",
+          "empleados",
+          "docente",
+          "clase"
+        ],
+        "texto": "Soy formador de equipos: preparo a las personas para que la tecnología y la IA se usen de verdad en el día a día. Llevo más de 20 años como docente y divulgador (COEPA, AIJU, AICE, AEC, SER Radio Alcoy, Grupo Zeta). Formación práctica, con tus procesos y tus herramientas, también como charla para tu equipo.",
+        "siguientes": [
+          "contacto",
+          "servicios"
+        ]
+      },
+      {
+        "id": "ilumya",
+        "boton": "¿Qué es iLumya?",
+        "claves": [
+          "ilumya",
+          "empresa",
+          "tu empresa",
+          "software",
+          "paradigma"
+        ],
+        "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes. Mi trabajo como AI Officer lo desarrollo a través de iLumya: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. «Trabajarás como no esperas hacerlo».",
+        "enlace": {
+          "texto": "Visitar ilumya.es",
+          "url": "https://ilumya.es"
+        },
+        "siguientes": [
+          "servicios",
+          "contacto"
+        ]
+      },
+      {
+        "id": "precios",
+        "boton": "¿Cuánto cuesta?",
+        "claves": [
+          "precio",
+          "precios",
+          "cuesta",
+          "coste",
+          "costo",
+          "tarifa",
+          "tarifas",
+          "presupuesto",
+          "pagar",
+          "euros",
+          "barato",
+          "caro",
+          "cuanto"
+        ],
+        "texto": "Depende del servicio y del tamaño de tu empresa. Hay formatos de proyecto, precio cerrado (el simulacro), bono de sesiones y suscripción mensual; el Sprint de ahorro puede llevar una parte variable ligada al ahorro medido. Todos los precios se cierran por escrito tras una primera llamada.",
+        "siguientes": [
+          "contacto"
+        ]
+      },
+      {
+        "id": "trayectoria",
+        "boton": "Tu trayectoria",
+        "claves": [
+          "trayectoria",
+          "experiencia",
+          "años",
+          "carrera",
+          "curriculum",
+          "cv",
+          "kliktickect",
+          "klikticket",
+          "mkf",
+          "miniland",
+          "linkedin",
+          "quien eres",
+          "quién",
+          "sobre ti"
+        ],
+        "texto": "Más de 25 años en marketing, negocio y transformación digital. He dirigido el marketing de empresas que venden en más de 140 países (Miniland, Mutua Levante, Diagram Software), creé MKF, Klikair y KlikTicket (vendida a un grupo de software) y en 2026 fundé iLumya.",
+        "enlace": {
+          "texto": "Ver mi LinkedIn",
+          "url": "https://www.linkedin.com/in/juanradomenech/"
+        },
+        "siguientes": [
+          "estudios",
+          "servicios"
+        ]
+      },
+      {
+        "id": "estudios",
+        "boton": "Tu formación académica",
+        "claves": [
+          "estudios",
+          "estudiado",
+          "master",
+          "masters",
+          "mba",
+          "licenciado",
+          "licenciatura",
+          "universidad",
+          "titulacion",
+          "esic",
+          "eae",
+          "obs",
+          "big data"
+        ],
+        "texto": "Licenciado en Marketing & Business Administration (ESIC), MBA (EAE), Máster en Data Management - Big Data & Business Analytics (OBS), Máster en Marketing Online y Comercio Digital (EAE), Máster en Marketing Digital (CEPADE-UPM) y Máster en Internet y Comunicación (UOC).",
+        "siguientes": [
+          "formacion-equipos",
+          "contacto"
+        ]
+      },
+      {
+        "id": "ciclismo",
+        "boton": "Tu lado ciclista",
+        "claves": [
+          "bici",
+          "bicicleta",
+          "ciclismo",
+          "ciclista",
+          "carretera",
+          "ruta",
+          "rutas",
+          "strava",
+          "kilometros",
+          "km",
+          "puerto",
+          "mundial",
+          "japon",
+          "francia",
+          "gran fondo",
+          "millars",
+          "uci",
+          "marcha",
+          "marchas"
+        ],
+        "texto": "La bici es mi otra oficina: salgo con un lío en la cabeza y vuelvo con un plan. En 2026 llevo 8.886 km y 172.068 m de desnivel, y me clasifiqué en The Millars para el Mundial UCI Gran Fondo de Japón. El próximo reto: clasificarme para Francia 2027.",
+        "enlace": {
+          "texto": "Ver la página Ciclista",
+          "url": "/ciclista.html"
+        },
+        "siguientes": [
+          "contacto"
+        ]
+      },
+      {
+        "id": "contacto",
+        "boton": "Quiero hablar con Juanra",
+        "claves": [
+          "contacto",
+          "contactar",
+          "hablar",
+          "llamar",
+          "llamada",
+          "reunion",
+          "cita",
+          "correo",
+          "email",
+          "mail",
+          "escribir",
+          "telefono",
+          "quedar",
+          "agendar",
+          "agenda",
+          "reservar",
+          "reserva",
+          "calendario",
+          "videollamada",
+          "meet"
+        ],
+        "texto": "Reserva una reunión directamente en mi agenda (con videollamada de Google Meet) o escríbeme y te respondo personalmente. Cuéntame en dos líneas tu empresa y qué necesitas.",
+        "accion": "correo",
+        "siguientes": []
+      },
+      {
+        "id": "saludo",
+        "claves": [
+          "hola",
+          "buenas",
+          "buenos dias",
+          "buenas tardes",
+          "hey"
+        ],
+        "texto": "¡Hola! ¿En qué te puedo ayudar? Puedo contarte mis servicios, la formación para equipos, iLumya o cómo contactar conmigo.",
+        "siguientes": [
+          "servicios",
+          "formacion-equipos",
+          "contacto"
+        ]
+      },
+      {
+        "id": "gracias",
+        "claves": [
+          "gracias",
+          "genial",
+          "perfecto",
+          "vale",
+          "ok"
+        ],
+        "texto": "¡A ti! Si quieres seguir la conversación con Juanra, escríbele.",
+        "accion": "correo",
+        "siguientes": []
+      }
+    ],
+    "no_entiendo": "No tengo esa respuesta, pero Juanra sí. Escríbele tu pregunta y te contesta personalmente.",
+    "correo_asunto": "Consulta desde juanradomenech.com"
+  },
+  "tiempo": {
+    "etiqueta": "El tiempo",
+    "cita": "No es que tengamos poco tiempo, sino que perdemos mucho.",
+    "autor": "Séneca",
+    "obra": "Sobre la brevedad de la vida",
+    "entradilla": "Casi dos mil años después, la frase sigue describiendo a la mayoría de las empresas: horas que se van en copiar datos, responder lo mismo y buscar papeles. Mi trabajo es recuperarlas. La bici me enseña qué hacer con ellas.",
+    "pasos": [
+      {
+        "titulo": "La IA recupera horas",
+        "texto": "Lo repetitivo lo hace la tecnología: informes, correos, ofertas, datos. Medido en horas, no en promesas."
+      },
+      {
+        "titulo": "Las horas se invierten",
+        "texto": "El tiempo recuperado no es para hacer más de lo mismo. Es para pensar, vender, cuidar al equipo… o salir a rodar."
+      },
+      {
+        "titulo": "La bici aclara la cabeza",
+        "texto": "Tres horas de carretera ordenan lo que no ordenan diez reuniones. Salgo con un lío, vuelvo con un plan."
+      },
+      {
+        "titulo": "El plan mejora la IA",
+        "texto": "Con la cabeza clara decido mejor qué automatizar después. Y el ciclo vuelve a empezar."
+      }
+    ],
+    "cierre": "La IA me da tiempo. La bici me enseña a no perderlo.",
+    "destacado": "Mi trabajo es recuperarlas."
+  },
+  "apps": {
+    "personalfinance": {
+      "publicar": true,
+      "indexar": false,
+      "ruta": "personalfinance.html",
+      "etiqueta": "Muy pronto · App",
+      "nombre": "Personal Finance PRO",
+      "lema": "Tu presupuesto, al ritmo de un mensaje.",
+      "entradilla": "Apuntas «15 € en taxi» o haces una foto al ticket, y la IA lo coloca en su sitio. Personal Finance PRO convierte el control de gastos en una matriz semanal y mensual que se mantiene sola, para que veas en cada momento cuánto te queda y dónde se va el dinero.",
+      "captura_principal": {
+        "src": "media/apps/pf-dashboard.webp",
+        "alt": "Panel de Personal Finance PRO con el presupuesto semanal y mensual por categorías",
+        "ancho": 1600,
+        "alto": 867
+      },
+      "funciones": [
+        {
+          "titulo": "Un gasto en tres segundos",
+          "texto": "Escribe o dicta «15 € en taxi \"trabajo\"» y la IA entiende el importe, la categoría, la fecha y el comentario."
+        },
+        {
+          "titulo": "Foto del ticket, desglosada",
+          "texto": "Fotografía el ticket del súper y separa sola comida, bebidas, droguería o bolsas en sus categorías."
+        },
+        {
+          "titulo": "Semana a semana",
+          "texto": "Presupuesto y gasto real por semanas y meses, con la desviación de cada partida siempre a la vista."
+        },
+        {
+          "titulo": "Análisis y asistente",
+          "texto": "Gráficos de consumo, los productos que más pesan y un asistente que te propone dónde ahorrar con tus propios números."
+        },
+        {
+          "titulo": "Tesorería",
+          "texto": "Movimientos y saldos de tus cuentas en un mismo sitio, sin conectar la app a tu banco."
+        },
+        {
+          "titulo": "Exporta cuando quieras",
+          "texto": "Tus artículos y gastos en PDF o Excel, para tu gestor o para tus propias cuentas."
+        }
+      ],
+      "capturas": [
+        {
+          "src": "media/apps/pf-analisis.webp",
+          "alt": "Análisis de Personal Finance PRO con los diez conceptos de mayor gasto",
+          "ancho": 1200,
+          "alto": 666,
+          "pie": "Análisis: dónde se va el dinero."
+        },
+        {
+          "src": "media/apps/pf-movil.webp",
+          "alt": "Personal Finance PRO en el móvil",
+          "ancho": 585,
+          "alto": 1050,
+          "pie": "En el móvil, con la semana actual a mano."
+        }
+      ],
+      "precio_titulo": "Plan único",
+      "precio_texto": "14 días de prueba gratis y precio de lanzamiento para quien se apunte a la lista de espera.",
+      "cta": "Apúntame a la lista de espera",
+      "cta_asunto": "Lista de espera Personal Finance PRO",
+      "cta_cuerpo": "Hola Juanra,\n\nQuiero apuntarme a la lista de espera de Personal Finance PRO.\n\nNombre: \n",
+      "secundario": "Ver una demo de 15 minutos",
+      "aviso": "Las capturas usan datos de ejemplo."
+    }
+  }
+}

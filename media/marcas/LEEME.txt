@@ -1,0 +1,5 @@
+Pon aquí el logo oficial de cada marca, con estos nombres exactos:
+  specialized.svg   rapha.svg   sram.svg   226ers.svg
+Mejor en SVG; también vale PNG (cambia la extensión en contenido.json).
+Usa la versión que te den las marcas (kit de prensa o de embajador). La web los pinta en blanco.
+Después ejecuta: python3 construir.py
