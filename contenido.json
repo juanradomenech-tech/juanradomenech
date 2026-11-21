@@ -1359,7 +1359,7 @@
       "entradilla": "Apuntas «15 € en taxi» o haces una foto al ticket, y la IA lo coloca en su sitio. Personal Finance PRO convierte el control de gastos en una matriz semanal y mensual que se mantiene sola, para que veas en cada momento cuánto te queda y dónde se va el dinero.",
       "captura_principal": {
         "src": "media/apps/pf-dashboard.webp",
-        "alt": "Panel de Personal Finance PRO con el presupuesto semanal y mensual por categorías",
+        "alt": "Panel de Personal Finance PRO con las cuatro cifras clave y el registro semanal por categorías",
         "ancho": 1600,
         "alto": 867
       },
@@ -1392,17 +1392,17 @@
       "capturas": [
         {
           "src": "media/apps/pf-analisis.webp",
-          "alt": "Análisis de Personal Finance PRO con los diez conceptos de mayor gasto",
+          "alt": "Análisis de Personal Finance PRO: gasto por categorías y los diez conceptos de mayor gasto",
           "ancho": 1200,
           "alto": 666,
-          "pie": "Análisis: dónde se va el dinero."
+          "pie": "Análisis: en qué categorías y conceptos se va el dinero."
         },
         {
           "src": "media/apps/pf-movil.webp",
-          "alt": "Personal Finance PRO en el móvil",
+          "alt": "Personal Finance PRO en el móvil confirmando un gasto: 12,40 € en Comida",
           "ancho": 585,
           "alto": 1050,
-          "pie": "En el móvil, con la semana actual a mano."
+          "pie": "En el móvil: escribes el gasto y te dice en qué partida lo ha puesto."
         }
       ],
       "precio_titulo": "Plan único",
