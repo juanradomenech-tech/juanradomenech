@@ -847,19 +847,29 @@ def app_pagina(clave):
     capturas = "".join(f'''<figure class="app-captura app-captura--{"alta" if x["alto"] > x["ancho"] else "ancha"} aparece">{img(x)}<figcaption>{e(x["pie"])}</figcaption></figure>'''
                        for x in a["capturas"])
     agenda = co.get("agenda_url", "")
+    destino_cta = a.get("cta_url") or url_mail
+    boton_cta = f'<a class="boton boton--lg" href="{e(destino_cta)}">{e(a["cta"])}</a>' if lleno(a.get("cta")) else ""
+    pg = a.get("pregunta")
+    pregunta = (f'''<section class="parte app-pregunta" aria-labelledby="t-pregunta">
+  <div class="wrap aparece">
+    <h2 class="app-pregunta-titulo" id="t-pregunta">{e(pg["titulo"])}</h2>
+    <p class="app-pregunta-texto">{e(pg["texto"])}</p>
+  </div>
+</section>
+''' if pg else "")
     contenido = f'''<section class="parte app-hero" aria-labelledby="t-app">
   <div class="wrap">
     <span class="etiqueta">{e(a["etiqueta"])}</span>
     <h1 class="app-nombre" id="t-app">{e(a["nombre"])}</h1>
     <p class="app-lema">{e(a["lema"])}</p>
     <p class="entradilla">{e(a["entradilla"])}</p>
-    <p class="app-acciones"><a class="boton boton--lg" href="{e(url_mail)}">{e(a["cta"])}</a>
+    <p class="app-acciones">{boton_cta}
       {f'<a class="boton boton--lg boton--linea" href="{e(agenda)}" target="_blank" rel="noopener">{e(a["secundario"])}</a>' if lleno(agenda) and lleno(a.get("secundario")) else ""}</p>
     {marco(a["captura_principal"])}
     <p class="app-aviso">{e(a["aviso"])}</p>
   </div>
 </section>
-<section class="parte parte--suave" aria-labelledby="t-funciones">
+{pregunta}<section class="parte parte--suave" aria-labelledby="t-funciones">
   <div class="wrap">
     <span class="etiqueta">Qué hace</span>
     <h2 class="titulo aparece" id="t-funciones">Menos apuntar, más decidir</h2>
@@ -870,9 +880,9 @@ def app_pagina(clave):
 <section class="parte app-precio" aria-labelledby="t-precio">
   <div class="wrap app-precio-caja aparece">
     <div><span class="etiqueta">{e(a["precio_titulo"])}</span>
-      <h2 class="titulo" id="t-precio">Sé de los primeros</h2>
+      <h2 class="titulo" id="t-precio">{e(a.get("precio_h2", "Sé de los primeros"))}</h2>
       <p>{e(a["precio_texto"])}</p></div>
-    <a class="boton boton--lg" href="{e(url_mail)}">{e(a["cta"])}</a>
+    {boton_cta}
   </div>
 </section>'''
     return head(f"{a['nombre']} · {a['lema']}", a["entradilla"][:155], "/" + a["ruta"].replace(".html", ""), a.get("indexar", False)) + f'''</head>

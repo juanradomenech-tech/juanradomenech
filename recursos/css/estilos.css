@@ -630,3 +630,10 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .cierre-telefono a { margin-left: 10px; font-size: 26px; letter-spacing: 3px; color: var(--white); transition: color .3s; }
 .cierre-telefono a:hover { color: var(--orange); }
 .pie span a:hover { color: var(--orange); }
+
+/* PFP: la pregunta del atún y la cerveza */
+.app-pregunta { padding-block: clamp(64px, 10vw, 128px); text-align: center; }
+.app-pregunta-titulo { margin: 0 auto; max-width: 18ch; font-family: var(--font-condensed); font-weight: 800; font-size: clamp(36px, 6vw, 76px); line-height: 1; text-transform: uppercase; }
+.app-pregunta-titulo::first-line { color: inherit; }
+.app-pregunta-texto { max-width: 600px; margin: 24px auto 0; font-size: 18px; line-height: 1.6; color: var(--white-70); }
+.app-precio-caja .boton { white-space: nowrap; }
