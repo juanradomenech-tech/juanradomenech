@@ -216,7 +216,9 @@ def cabecera(activa=""):
         actual = ' class="activo" aria-current="page"' if clave == activa else ""
         return f'<a href="{href}"{actual}>{texto}</a>'
     menu = (enlace("/consultor.html", C["consultor"].get("rol", "Consultor"), "consultor") + enlace("/ciclista.html", "Ciclista", "ciclista")
-            + '<a href="#contacto">Contacto</a>')
+            + '<a href="#contacto">Contacto</a>'
+            + "".join(enlace("/" + ap["ruta"], ap["menu"], k) for k, ap in C.get("apps", {}).items()
+                      if ap.get("publicar") and lleno(ap.get("menu"))))
     return f'''<a class="saltar" href="#contenido">Saltar al contenido</a>
 <header class="cabecera">
   <a class="logo" href="/" aria-label="Juanra Doménech, inicio"><svg class="logo-bola" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><defs><radialGradient id="bola8" cx="34%" cy="28%" r="78%"><stop offset="0" stop-color="#5a5a5a"/><stop offset=".45" stop-color="#161616"/><stop offset="1" stop-color="#000"/></radialGradient></defs><circle cx="16" cy="16" r="15.2" fill="url(#bola8)" stroke="rgba(255,255,255,.28)" stroke-width=".8"/><circle cx="14.6" cy="13.6" r="6.6" fill="#f4f4f4"/><text x="14.6" y="17.1" text-anchor="middle" font-family="Barlow Condensed, Arial, sans-serif" font-weight="800" font-size="10" fill="#000">8</text><ellipse cx="9.2" cy="7.6" rx="3.2" ry="1.7" fill="#fff" opacity=".35" transform="rotate(-30 9.2 7.6)"/></svg><span class="logo-nombre">Juanra <span>Doménech</span></span></a>
@@ -852,7 +854,7 @@ def app_pagina(clave):
     <p class="app-lema">{e(a["lema"])}</p>
     <p class="entradilla">{e(a["entradilla"])}</p>
     <p class="app-acciones"><a class="boton boton--lg" href="{e(url_mail)}">{e(a["cta"])}</a>
-      {f'<a class="boton boton--lg boton--linea" href="{e(agenda)}" target="_blank" rel="noopener">{e(a["secundario"])}</a>' if lleno(agenda) else ""}</p>
+      {f'<a class="boton boton--lg boton--linea" href="{e(agenda)}" target="_blank" rel="noopener">{e(a["secundario"])}</a>' if lleno(agenda) and lleno(a.get("secundario")) else ""}</p>
     {marco(a["captura_principal"])}
     <p class="app-aviso">{e(a["aviso"])}</p>
   </div>
@@ -875,7 +877,7 @@ def app_pagina(clave):
 </section>'''
     return head(f"{a['nombre']} · {a['lema']}", a["entradilla"][:155], "/" + a["ruta"].replace(".html", ""), a.get("indexar", False)) + f'''</head>
 <body>
-{cabecera()}
+{cabecera(clave)}
 <main id="contenido" class="app-pagina">
 {contenido}
 </main>

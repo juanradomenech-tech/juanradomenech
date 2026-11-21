@@ -1410,8 +1410,9 @@
       "cta": "Apúntame a la lista de espera",
       "cta_asunto": "Lista de espera Personal Finance PRO",
       "cta_cuerpo": "Hola Juanra,\n\nQuiero apuntarme a la lista de espera de Personal Finance PRO.\n\nNombre: \n",
-      "secundario": "Ver una demo de 15 minutos",
-      "aviso": "Las capturas usan datos de ejemplo."
+      "secundario": "",
+      "aviso": "Las capturas usan datos de ejemplo.",
+      "menu": "PFP"
     }
   }
 }
