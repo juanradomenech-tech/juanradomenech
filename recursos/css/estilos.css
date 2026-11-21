@@ -646,3 +646,32 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 }
 .app-condiciones { margin-top: 12px; font-size: 13px; }
 .app-condiciones a { color: var(--orange); text-decoration: underline; }
+
+/* ---------- Ventana de Black Friday de Personal Finance PRO ---------- */
+.promo-pfp { position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center; padding: 16px; background: rgba(0, 0, 0, .55); backdrop-filter: blur(3px); opacity: 0; transition: opacity .3s var(--ease); }
+.promo-pfp.visible { opacity: 1; }
+html.promo-pfp-abierta { overflow: hidden; }
+.promo-pfp-caja { position: relative; width: 100%; max-width: 440px; max-height: calc(100dvh - 32px); overflow-y: auto; background: #fff; color: #1e293b; border-radius: 28px; padding: 28px 24px 22px; box-shadow: 0 30px 80px rgba(0,0,0,.45); transform: translateY(16px) scale(.98); transition: transform .35s var(--ease); font-family: var(--font-body); }
+.promo-pfp.visible .promo-pfp-caja { transform: none; }
+.promo-pfp-cerrar { position: absolute; top: 12px; right: 14px; width: 36px; height: 36px; border: 0; background: none; font-size: 28px; line-height: 1; color: #94a3b8; cursor: pointer; border-radius: 50%; }
+.promo-pfp-cerrar:hover { color: #0f172a; background: #f1f5f9; }
+.promo-pfp-marca { display: flex; align-items: center; gap: 8px; margin: 0 0 14px; font-family: var(--font-condensed); text-transform: uppercase; letter-spacing: .04em; font-size: 20px; color: #000; }
+.promo-pfp-marca svg { width: 26px; height: 26px; flex-shrink: 0; }
+.promo-pfp-marca b { font-weight: 800; }
+.promo-pfp-marca span { font-weight: 300; }
+.promo-pfp h2 { margin: 0 0 8px; font-family: var(--font-condensed); font-weight: 800; text-transform: uppercase; font-size: 28px; line-height: 1.02; letter-spacing: .01em; color: #000; }
+.promo-pfp-texto { margin: 0 0 16px; font-size: 14px; line-height: 1.5; color: #64748b; }
+.promo-pfp-banda { margin: 0 0 10px; padding: 10px 14px; border-radius: 12px; background: #000; color: #fff; font-size: 13px; font-weight: 700; text-align: center; line-height: 1.35; }
+.promo-pfp-planes { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+.promo-pfp-plan { display: flex; flex-direction: column; padding: 12px 14px; border: 1px solid #e2e8f0; border-radius: 14px; }
+.promo-pfp-plan--top { border-color: var(--orange); background: #fff4ee; box-shadow: 0 0 0 3px rgba(255, 103, 31, .15); }
+.promo-pfp-tipo { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: #64748b; }
+.promo-pfp-plan s { font-size: 12px; color: #94a3b8; }
+.promo-pfp-plan strong { font-family: var(--font-condensed); font-size: 26px; font-weight: 800; color: #0f172a; line-height: 1.1; }
+.promo-pfp-plan small { font-size: 12px; font-weight: 700; color: #64748b; }
+.promo-pfp-plan em { font-style: normal; font-size: 12px; font-weight: 700; color: #059669; }
+.promo-pfp-boton { display: flex; align-items: center; justify-content: center; min-height: 52px; border-radius: 999px; background: var(--orange); color: #fff; font-weight: 800; font-size: 17px; text-decoration: none; transition: background .2s; }
+.promo-pfp-boton:hover { background: var(--orange-hover); }
+.promo-pfp-nota { margin: 10px 0 6px; font-size: 12px; color: #94a3b8; text-align: center; }
+.promo-pfp-mas { display: block; text-align: center; font-size: 13px; font-weight: 700; color: #0f172a; text-decoration: underline; }
+@media (max-width: 380px) { .promo-pfp h2 { font-size: 24px; } .promo-pfp-plan strong { font-size: 22px; } }
