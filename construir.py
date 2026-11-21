@@ -881,7 +881,8 @@ def app_pagina(clave):
   <div class="wrap app-precio-caja aparece">
     <div><span class="etiqueta">{e(a["precio_titulo"])}</span>
       <h2 class="titulo" id="t-precio">{e(a.get("precio_h2", "Sé de los primeros"))}</h2>
-      <p>{e(a["precio_texto"])}</p></div>
+      <p>{e(a["precio_texto"])}</p>
+      <p class="app-condiciones"><a href="/condiciones-pfp.html">Condiciones y privacidad de la app</a></p></div>
     {boton_cta}
   </div>
 </section>'''
@@ -933,6 +934,67 @@ def privacidad():
   <p>El proveedor de correo (Google Ireland Limited, con Gmail) y el de alojamiento de la web (Netlify, Inc.), que solo guarda los registros técnicos de acceso necesarios para servir la web.{" Si aceptas la analítica, Google Ireland Limited como encargado (ver la política de cookies)." if GA else ""} No se ceden datos a nadie más salvo obligación legal.</p>
   <h2>Tus derechos</h2>
   <p>Puedes pedir acceso, rectificación, supresión, oposición, limitación y portabilidad escribiendo a {e(L["correo_legal"])}. Si crees que no se han respetado, puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</p>''')
+
+
+def condiciones_pfp():
+    L = C["legal"]
+    c = e(L["correo_legal"])
+    return pagina("Personal Finance PRO · Condiciones y privacidad", "/condiciones-pfp.html", f'''
+  <p>Estas condiciones regulan el uso de Personal Finance PRO (en adelante, «la app»), disponible en <a href="https://app.juanradomenech.com">app.juanradomenech.com</a>, y la suscripción PRO. Al crear una cuenta o contratar PRO las aceptas.</p>
+
+  <h2>1. Quién presta el servicio</h2>
+  <p>{e(L["titular"])}, NIF {e(L["nif"])}, con domicilio en {e(L["domicilio"])}. Correo de contacto y soporte: <a href="mailto:{c}">{c}</a>.</p>
+
+  <h2>2. Qué es la app</h2>
+  <p>Una herramienta para llevar tu presupuesto personal: apuntas gastos escribiendo, dictando o fotografiando tickets, y una inteligencia artificial los coloca en su partida. Es una ayuda para organizarte, no asesoramiento financiero, fiscal ni de inversión. La IA puede equivocarse al leer un ticket o al elegir una partida: revisa lo que importa y corrígelo cuando haga falta.</p>
+
+  <h2>3. Planes</h2>
+  <ul>
+    <li><strong>Free (gratis):</strong> el panel de presupuesto, 100 créditos de IA en total y hasta 10 elementos en Historial (tickets), Artículos y Análisis (artículos) y Tesorería (movimientos). Cada ticket o mensaje que lee la IA gasta un crédito. Al llegar al límite, la sección pasa a ser PRO; tus datos no se borran.</li>
+    <li><strong>PRO:</strong> todas las secciones y la IA sin límite de créditos, más el asesor financiero IA. Cuesta <strong>2,99 € al mes</strong> o <strong>29,99 € al año</strong>, IVA incluido.</li>
+  </ul>
+  <p>Hago un uso razonable de la IA para mantener el servicio: si una cuenta hiciera un uso claramente abusivo o automatizado, podría limitarla avisando antes por correo.</p>
+
+  <h2>4. Prueba gratis, pago y renovación</h2>
+  <ul>
+    <li>Al contratar PRO tienes <strong>14 días de prueba gratis</strong>. Si no cancelas antes de que terminen, se cobra el primer periodo (mes o año) y la suscripción <strong>se renueva automáticamente</strong> cada periodo al mismo precio hasta que la canceles.</li>
+    <li>El pago lo gestiona Stripe. La app nunca ve ni guarda los datos de tu tarjeta.</li>
+    <li>Recibirás la factura de cada cobro en tu correo y podrás descargarlas desde «Tu cuenta → Gestionar suscripción y facturas».</li>
+    <li>Si cambio el precio, te avisaré por correo con al menos 30 días de antelación; el nuevo precio solo se aplicará a partir de la siguiente renovación y podrás cancelar antes sin coste.</li>
+  </ul>
+
+  <h2>5. Precio de lanzamiento Black Friday</h2>
+  <p>Quien contrate PRO hasta el 30 de noviembre de 2026 a las 23:59 (hora peninsular) tiene un <strong>20 % de descuento para siempre</strong>: 2,39 € al mes o 23,99 € al año, IVA incluido. El descuento se mantiene en todas las renovaciones y si cambias entre mensual y anual, mientras la suscripción siga activa. Si la cancelas y vuelves a contratar más adelante, se aplicará el precio vigente en ese momento.</p>
+
+  <h2>6. Cancelar y cambiar de plan</h2>
+  <ul>
+    <li>Puedes cancelar cuando quieras desde «Tu cuenta → Gestionar suscripción y facturas». La cancelación es efectiva al final del periodo ya pagado: hasta entonces sigues teniendo PRO y no se vuelve a cobrar.</li>
+    <li>Si pasas de mensual a anual, el cambio es inmediato y se descuenta la parte no usada del mes. Si pasas de anual a mensual, el cambio se aplica al terminar el año pagado.</li>
+    <li>Los periodos ya pagados no se devuelven de forma parcial, salvo lo previsto en el apartado siguiente o lo que diga la ley.</li>
+  </ul>
+
+  <h2>7. Derecho de desistimiento</h2>
+  <p>Como consumidor, tienes 14 días naturales desde que contratas PRO para desistir sin dar explicaciones (artículos 102 y siguientes de la Ley General para la Defensa de los Consumidores y Usuarios). Esos 14 días coinciden con la prueba gratis: si cancelas dentro de la prueba, no se te cobra nada.</p>
+  <p>Además, si se te ha hecho el primer cobro y me lo pides en los 14 días siguientes escribiendo a <a href="mailto:{c}">{c}</a>, te devuelvo ese primer importe completo.</p>
+
+  <h2>8. Tus datos</h2>
+  <p>El responsable es {e(L["titular"])} (datos en el apartado 1).</p>
+  <ul>
+    <li><strong>Qué datos:</strong> tu nombre y correo (y la foto de perfil, si entras con tu cuenta de Google); el presupuesto, los gastos, los tickets (texto e imagen que envíes), los artículos y los movimientos que guardes; el uso de créditos; y, si contratas PRO, los datos de la suscripción (no los de la tarjeta).</li>
+    <li><strong>Para qué:</strong> para prestarte el servicio, leer tus tickets y mensajes con IA, gestionar el cobro y atenderte. La base es el contrato que aceptas al registrarte y, en lo relativo a facturación, el cumplimiento de obligaciones legales.</li>
+    <li><strong>Quién más los trata, por encargo mío:</strong> Google (Firebase, para el acceso, el almacenamiento en la nube y la IA Gemini que lee tickets y mensajes) y Stripe (pagos y facturas). Pueden tratar datos fuera del Espacio Económico Europeo con las garantías que exige el RGPD (cláusulas contractuales tipo y marcos de adecuación). No se venden ni se ceden datos a nadie más salvo obligación legal.</li>
+    <li><strong>Cuánto tiempo:</strong> mientras tengas la cuenta. Si me pides borrarla, elimino tus datos en un plazo máximo de 30 días, salvo los de facturación, que se guardan el tiempo que obliga la ley fiscal.</li>
+    <li><strong>Tus derechos:</strong> acceso, rectificación, supresión, oposición, limitación y portabilidad, escribiendo a <a href="mailto:{c}">{c}</a>. Puedes reclamar ante la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener">aepd.es</a>).</li>
+  </ul>
+
+  <h2>9. Disponibilidad y responsabilidad</h2>
+  <p>Pongo los medios razonables para que la app funcione bien y tus datos se guarden de forma segura, pero puede haber interrupciones por mantenimiento o por fallos de los proveedores. Las decisiones económicas que tomes con la información de la app son tuyas. Nada de esto limita los derechos que te reconoce la ley como consumidor.</p>
+
+  <h2>10. Cambios en estas condiciones</h2>
+  <p>Si cambio algo importante, te avisaré por correo o dentro de la app con al menos 30 días de antelación. Si no estás de acuerdo, puedes cancelar antes de que entren en vigor.</p>
+
+  <h2>11. Ley aplicable</h2>
+  <p>Se aplica la ley española. Si eres consumidor, son competentes los juzgados de tu domicilio.</p>''')
 
 
 def cookies():
@@ -1080,6 +1142,7 @@ def main():
         "aviso-legal.html": aviso_legal(),
         "privacidad.html": privacidad(),
         "cookies.html": cookies(),
+        "condiciones-pfp.html": condiciones_pfp(),
         "404.html": error404(),
     }
     for clave, a in C.get("apps", {}).items():
