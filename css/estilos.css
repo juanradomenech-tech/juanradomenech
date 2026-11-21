@@ -636,4 +636,13 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .app-pregunta-titulo { margin: 0 auto; max-width: 18ch; font-family: var(--font-condensed); font-weight: 800; font-size: clamp(36px, 6vw, 76px); line-height: 1; text-transform: uppercase; }
 .app-pregunta-titulo::first-line { color: inherit; }
 .app-pregunta-texto { max-width: 600px; margin: 24px auto 0; font-size: 18px; line-height: 1.6; color: var(--white-70); }
-.app-precio-caja .boton { white-space: nowrap; }
+/* Botones largos de PFP: en una línea cuando caben; en el móvil, a todo el ancho y partidos si hace falta */
+.app-precio-caja .boton { flex-shrink: 0; white-space: nowrap; }
+@media (max-width: 900px) {
+  .app-precio-caja { flex-direction: column; align-items: flex-start; }
+}
+@media (max-width: 640px) {
+  .app-acciones .boton, .app-precio-caja .boton { width: 100%; height: auto; min-height: 52px; padding: 14px 20px; white-space: normal; text-align: center; line-height: 1.4; letter-spacing: 1.5px; font-size: 13px; }
+}
+.app-condiciones { margin-top: 12px; font-size: 13px; }
+.app-condiciones a { color: var(--orange); text-decoration: underline; }
