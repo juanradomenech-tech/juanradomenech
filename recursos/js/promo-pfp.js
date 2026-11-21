@@ -70,7 +70,9 @@
     return !!b && !b.hidden && getComputedStyle(b).display !== "none" && getComputedStyle(b).visibility !== "hidden";
   }
   (function esperar() {
-    if (Date.now() - empezar < 2500 || cookiesVisibles()) { setTimeout(esperar, 500); return; }
+    var t = Date.now() - empezar;
+    // Espera 2,5 s; si sigue el aviso de cookies sin responder, sale igualmente a los 8 s
+    if (t < 2500 || (cookiesVisibles() && t < 8000)) { setTimeout(esperar, 500); return; }
     crear();
   })();
 })();
