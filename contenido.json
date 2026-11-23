@@ -869,22 +869,22 @@
     "revisar": true,
     "cifras": [
       {
-        "numero": "9.008",
+        "numero": "9.029",
         "sufijo": "km",
         "texto": "recorridos en 2026"
       },
       {
-        "numero": "174.524",
+        "numero": "174.985",
         "sufijo": "m",
         "texto": "de desnivel positivo: más de 19 veces el Everest"
       },
       {
-        "numero": "237",
+        "numero": "238",
         "sufijo": "",
         "texto": "salidas en bici este año"
       },
       {
-        "numero": "357",
+        "numero": "358",
         "sufijo": "h",
         "texto": "pedaleando en 2026"
       }
@@ -1008,9 +1008,18 @@
         "foto": ""
       }
     ],
-    "cifras_nota": "Datos de Strava del 1 de enero al 22 de noviembre de 2026.",
+    "cifras_nota": "Datos de Strava del 1 de enero al 23 de noviembre de 2026.",
     "ultimas_titulo": "Últimas salidas",
     "ultimas": [
+      {
+        "fecha": "23 nov 2026",
+        "nombre": "Postureo con allegreto!",
+        "km": "21,4",
+        "desnivel": "461",
+        "tiempo": "52 min",
+        "velocidad": "24,6",
+        "url": "https://www.strava.com/activities/21095892039"
+      },
       {
         "fecha": "22 nov 2026",
         "nombre": "Viento 💨, aliado del ciclista 🚴🏻‍♂️",
@@ -1028,15 +1037,6 @@
         "tiempo": "2 h 54 min",
         "velocidad": "24,1",
         "url": "https://www.strava.com/activities/21070550009"
-      },
-      {
-        "fecha": "20 nov 2026",
-        "nombre": "🐌 & +postureo!!",
-        "km": "21,4",
-        "desnivel": "456",
-        "tiempo": "55 min",
-        "velocidad": "23,4",
-        "url": "https://www.strava.com/activities/21059891196"
       }
     ],
     "retos_titulo": "Marchas de 2026",
@@ -1250,7 +1250,7 @@
           "marcha",
           "marchas"
         ],
-        "texto": "La bici es mi otra oficina: salgo con un lío en la cabeza y vuelvo con un plan. En 2026 llevo 9.008 km y 174.524 m de desnivel, y me clasifiqué en The Millars para el Mundial UCI Gran Fondo de Japón. El próximo reto: clasificarme para Francia 2027.",
+        "texto": "La bici es mi otra oficina: salgo con un lío en la cabeza y vuelvo con un plan. En 2026 llevo 9.029 km y 174.985 m de desnivel, y me clasifiqué en The Millars para el Mundial UCI Gran Fondo de Japón. El próximo reto: clasificarme para Francia 2027.",
         "enlace": {
           "texto": "Ver la página Ciclista",
           "url": "/ciclista.html"
