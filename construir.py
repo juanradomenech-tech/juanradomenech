@@ -865,6 +865,7 @@ def app_pagina(clave):
     <p class="entradilla">{e(a["entradilla"])}</p>
     <p class="app-acciones">{boton_cta}
       {f'<a class="boton boton--lg boton--linea" href="{e(agenda)}" target="_blank" rel="noopener">{e(a["secundario"])}</a>' if lleno(agenda) and lleno(a.get("secundario")) else ""}</p>
+    {f'<p class="app-tiendas">{e(a["tiendas"])}</p>' if lleno(a.get("tiendas")) else ""}
     {marco(a["captura_principal"])}
     <p class="app-aviso">{e(a["aviso"])}</p>
   </div>
