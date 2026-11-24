@@ -269,11 +269,11 @@ def head(titulo, descripcion, ruta="/", indexar=True):
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<link rel="icon" href="/img/favicon-32.png?v=3" type="image/png" sizes="32x32">
-<link rel="icon" href="/img/favicon-192.png?v=3" type="image/png" sizes="192x192">
-<link rel="shortcut icon" href="/favicon.ico?v=3">
-<link rel="icon" href="/favicon.svg?v=3" type="image/svg+xml">
-<link rel="apple-touch-icon" href="/img/apple-touch-icon.png?v=3">
+<link rel="icon" href="/img/favicon-32.png?v=4" type="image/png" sizes="32x32">
+<link rel="icon" href="/img/favicon-192.png?v=4" type="image/png" sizes="192x192">
+<link rel="shortcut icon" href="/favicon.ico?v=4">
+<link rel="icon" href="/favicon.svg?v=4" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/img/apple-touch-icon.png?v=4">
 <link rel="preload" href="/fonts/barlow-condensed-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/estilos.css">
