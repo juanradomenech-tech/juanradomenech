@@ -972,7 +972,7 @@ def pfp_condiciones():
   <h2>4. Planes</h2>
   <ul>
     <li><strong>Free (gratis):</strong> el panel de presupuesto, 100 créditos de IA en total y hasta 10 elementos en Historial (tickets), Artículos y Análisis (artículos) y Tesorería (movimientos). Cada ticket o mensaje que lee la IA gasta un crédito. Al llegar al límite, la sección pasa a ser PRO; tus datos no se borran.</li>
-    <li><strong>PRO:</strong> todas las secciones y la IA sin límite de créditos, el asesor financiero IA y la conciliación bancaria. Cuesta <strong>2,99 € al mes</strong> o <strong>29,99 € al año</strong>, IVA incluido.</li>
+    <li><strong>PRO:</strong> todas las secciones y la IA sin límite de créditos, el asesor financiero IA y la conciliación bancaria. Cuesta <strong>1,99 € al mes</strong> o <strong>19,99 € al año</strong>, IVA incluido.</li>
   </ul>
   <p>Hago un uso razonable de la IA para mantener el servicio: si una cuenta hiciera un uso claramente abusivo o automatizado, podría limitarla avisando antes por correo.</p>
 
@@ -989,7 +989,7 @@ def pfp_condiciones():
   <p>Si usas la app de iPhone, también se aplica el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">contrato de licencia estándar de Apple</a>, en lo que no contradiga estas condiciones.</p>
 
   <h2>7. Precio de lanzamiento Black Friday</h2>
-  <p>Quien contrate PRO en la web (app.juanradomenech.com) hasta el 30 de noviembre de 2026 a las 23:59 (hora peninsular) tiene un <strong>20 % de descuento para siempre</strong>: 2,39 € al mes o 23,99 € al año, IVA incluido. El descuento se mantiene en todas las renovaciones y si cambias entre mensual y anual, mientras la suscripción siga activa. Si la cancelas y vuelves a contratar más adelante, se aplicará el precio vigente en ese momento.</p>
+  <p>Quien contrate PRO en la web (app.juanradomenech.com) hasta el 30 de noviembre de 2026 a las 23:59 (hora peninsular) tiene un <strong>20 % de descuento para siempre</strong>: 1,59 € al mes o 15,99 € al año, IVA incluido. El descuento se mantiene en todas las renovaciones y si cambias entre mensual y anual, mientras la suscripción siga activa. Si la cancelas y vuelves a contratar más adelante, se aplicará el precio vigente en ese momento.</p>
 
   <h2>8. Cancelar y cambiar de plan (web)</h2>
   <ul>
