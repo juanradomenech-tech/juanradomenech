@@ -1,11 +1,11 @@
 {
   "anio": 2026,
-  "hasta": "2026-11-23T15:33:32",
+  "hasta": "2026-11-25T15:24:37",
   "ids_contados_ultimo_dia": [
-    "21095892039"
+    "21120989252"
   ],
-  "metros": 9029082.5,
-  "segundos": 1288450,
-  "desnivel": 174985,
-  "salidas": 238
+  "metros": 9058713.0,
+  "segundos": 1292820,
+  "desnivel": 175595,
+  "salidas": 239
 }

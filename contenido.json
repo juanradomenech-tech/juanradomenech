@@ -869,22 +869,22 @@
     "revisar": true,
     "cifras": [
       {
-        "numero": "9.029",
+        "numero": "9.059",
         "sufijo": "km",
         "texto": "recorridos en 2026"
       },
       {
-        "numero": "174.985",
+        "numero": "175.595",
         "sufijo": "m",
         "texto": "de desnivel positivo: más de 19 veces el Everest"
       },
       {
-        "numero": "238",
+        "numero": "239",
         "sufijo": "",
         "texto": "salidas en bici este año"
       },
       {
-        "numero": "358",
+        "numero": "359",
         "sufijo": "h",
         "texto": "pedaleando en 2026"
       }
@@ -1008,9 +1008,18 @@
         "foto": ""
       }
     ],
-    "cifras_nota": "Datos de Strava del 1 de enero al 23 de noviembre de 2026.",
+    "cifras_nota": "Datos de Strava del 1 de enero al 25 de noviembre de 2026.",
     "ultimas_titulo": "Últimas salidas",
     "ultimas": [
+      {
+        "fecha": "25 nov 2026",
+        "nombre": "Wiiiiindy!!!!!!",
+        "km": "29,6",
+        "desnivel": "610",
+        "tiempo": "1 h 13 min",
+        "velocidad": "24,4",
+        "url": "https://www.strava.com/activities/21120989252"
+      },
       {
         "fecha": "23 nov 2026",
         "nombre": "Postureo con allegreto!",
@@ -1028,19 +1037,10 @@
         "tiempo": "2 h 9 min",
         "velocidad": "24,1",
         "url": "https://www.strava.com/activities/21082688213"
-      },
-      {
-        "fecha": "21 nov 2026",
-        "nombre": "Primavera terminando noviembre!",
-        "km": "69,9",
-        "desnivel": "1.441",
-        "tiempo": "2 h 54 min",
-        "velocidad": "24,1",
-        "url": "https://www.strava.com/activities/21070550009"
       }
     ],
     "retos_titulo": "Marchas de 2026",
-    "datos_strava": "Fuente: Strava, consultado el 23 de noviembre de 2026.",
+    "datos_strava": "Fuente: Strava, consultado el 25 de noviembre de 2026.",
     "video_contacto": {
       "mp4": "media/video/rodillos.mp4",
       "poster": "media/video/rodillos.webp"
@@ -1250,7 +1250,7 @@
           "marcha",
           "marchas"
         ],
-        "texto": "La bici es mi otra oficina: salgo con un lío en la cabeza y vuelvo con un plan. En 2026 llevo 9.029 km y 174.985 m de desnivel, y me clasifiqué en The Millars para el Mundial UCI Gran Fondo de Japón. El próximo reto: clasificarme para Francia 2027.",
+        "texto": "La bici es mi otra oficina: salgo con un lío en la cabeza y vuelvo con un plan. En 2026 llevo 9.059 km y 175.595 m de desnivel, y me clasifiqué en The Millars para el Mundial UCI Gran Fondo de Japón. El próximo reto: clasificarme para Francia 2027.",
         "enlace": {
           "texto": "Ver la página Ciclista",
           "url": "/ciclista.html"
