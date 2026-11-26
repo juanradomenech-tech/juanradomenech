@@ -40,7 +40,7 @@
   },
   "consultor": {
     "titulo": "AI Product Designer",
-    "entradilla": "Concibo y diseño producto de software. Parto de un diagnóstico de cómo trabaja tu empresa, diseño el producto (qué resuelve, para quién, con qué pantallas y con qué datos) y dirijo su construcción, la haga la IA o un equipo de desarrollo, hasta que funciona en el día a día. Llevo 25 años haciéndolo: MKF, Klikair CRM y KlikTicket, que acabé vendiendo a un grupo de software. Hoy lo hago con IA desde iLumya, la empresa que fundé en 2026 y desde la que también trabajo como AI Officer para pymes.",
+    "entradilla": "Concibo y diseño producto de software. Parto de un diagnóstico de cómo trabaja tu empresa, diseño el producto (qué resuelve, para quién, con qué pantallas y con qué datos) y dirijo su construcción, la haga la IA o un equipo de desarrollo, hasta que funciona en el día a día. Llevo 25 años haciéndolo: MKF, Klikair CRM y KlikTicket, que acabé vendiendo a un grupo de software. Hoy lo hago con IA desde iLumya, la empresa que fundé en 2026 y desde la que también trabajo como AI Officer y AI Product Designer para pymes.",
     "revisar": true,
     "cifras": [
       {
@@ -201,7 +201,7 @@
       "mostrar": true,
       "titulo": "iLumya",
       "subtitulo": "Mi empresa tecnológica",
-      "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. Allí concibo el producto y trabajo como AI Officer. Los servicios para empresas los tienes en ilumya.es.",
+      "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. Allí concibo el producto y trabajo como AI Officer y AI Product Designer. Los servicios para empresas los tienes en ilumya.es.",
       "frase": "Adaptamos la gestión de tu empresa a la IA… y la hacemos evolucionar cada mes.",
       "url": "https://ilumya.es",
       "boton": "Ver servicios en ilumya.es",
@@ -1140,7 +1140,7 @@
           "software",
           "paradigma"
         ],
-        "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. Allí concibo el producto y trabajo como AI Officer. Los servicios para empresas los tienes en ilumya.es.",
+        "texto": "En 2026 creé iLumya, un nuevo paradigma de empresa tecnológica de IA y software para pymes: personas que adaptan la gestión de la empresa a la IA y tecnología de IA que hace el trabajo cada día. Allí concibo el producto y trabajo como AI Officer y AI Product Designer. Los servicios para empresas los tienes en ilumya.es.",
         "enlace": {
           "texto": "Ver servicios en ilumya.es",
           "url": "https://ilumya.es"
