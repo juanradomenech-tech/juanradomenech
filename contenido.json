@@ -1417,7 +1417,7 @@
         "etiqueta": "Para quién es",
         "titulo": "Para tu dinero, no para tu empresa",
         "texto": "Personal Finance PRO es una app de finanzas personales: está pensada para el presupuesto de una persona o de una familia, no para llevar las cuentas de un negocio.",
-        "si": ["Los gastos de casa, del súper y del día a día", "Tu presupuesto semanal y mensual", "Tus cuentas bancarias personales"],
+        "si": ["Los gastos de casa, del súper y del día a día", "Tu presupuesto semanal, mensual y anual", "Tus cuentas bancarias personales"],
         "no": ["Facturas, IVA ni impuestos de empresa", "Contabilidad, nóminas ni proveedores", "Cuentas de una sociedad o de un autónomo"]
       },
       "menu": "PFP",
