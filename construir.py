@@ -254,7 +254,6 @@ def head(titulo, descripcion, ruta="/", indexar=True):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script>document.documentElement.classList.add("js");setTimeout(function(){{var d=document.documentElement;if(!d.classList.contains("js-ok"))d.classList.add("funde-todo")}},3000)</script>
 <title>{e(titulo)}</title>
 <meta name="description" content="{e(descripcion)}">
 {robots}
