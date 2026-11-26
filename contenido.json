@@ -1326,7 +1326,7 @@
     "cita": "No es que tengamos poco tiempo, sino que perdemos mucho.",
     "autor": "Séneca",
     "obra": "Sobre la brevedad de la vida",
-    "entradilla": "Casi dos mil años después, la frase sigue describiendo a la mayoría de las empresas: horas que se van en copiar datos, responder lo mismo y buscar papeles. Mi trabajo es recuperarlas. La bici me enseña qué hacer con ellas.",
+    "entradilla": "Casi dos mil años después, la frase sigue describiendo a la mayoría de las empresas: horas que se van en copiar datos, responder lo mismo y buscar papeles. Mi trabajo es recuperarlo. La bici me enseña qué hacer con ellas.",
     "pasos": [
       {
         "titulo": "La IA recupera horas",
@@ -1346,7 +1346,7 @@
       }
     ],
     "cierre": "La IA me da tiempo. La bici me enseña a no perderlo.",
-    "destacado": "Mi trabajo es recuperarlas."
+    "destacado": "Mi trabajo es recuperarlo."
   },
   "apps": {
     "personalfinance": {
