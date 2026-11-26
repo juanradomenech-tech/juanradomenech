@@ -36,8 +36,8 @@
         '<p class="promo-pfp-texto">Apunta cada gasto escribiendo, dictando o con una foto del ticket. La IA lo coloca en su partida y ves tu presupuesto semana a semana.</p>' +
         '<p class="promo-pfp-banda">Precio Black Friday: −20&nbsp;% para siempre · hasta el 30 de noviembre</p>' +
         '<div class="promo-pfp-planes">' +
-          '<div class="promo-pfp-plan"><span class="promo-pfp-tipo">Mensual</span><s>2,99 €</s><strong>2,39 €<small>/mes</small></strong></div>' +
-          '<div class="promo-pfp-plan promo-pfp-plan--top"><span class="promo-pfp-tipo">Anual</span><s>29,99 €</s><strong>23,99 €<small>/año</small></strong><em>2 meses gratis</em></div>' +
+          '<div class="promo-pfp-plan"><span class="promo-pfp-tipo">Mensual</span><s>1,99 €</s><strong>1,59 €<small>/mes</small></strong></div>' +
+          '<div class="promo-pfp-plan promo-pfp-plan--top"><span class="promo-pfp-tipo">Anual</span><s>19,99 €</s><strong>15,99 €<small>/año</small></strong><em>2 meses gratis</em></div>' +
         '</div>' +
         '<a class="promo-pfp-boton" href="' + APP + '">Empieza gratis</a>' +
         '<p class="promo-pfp-nota">Plan gratis con 100 créditos de IA. PRO con 14 días gratis; cancela cuando quieras.</p>' +
