@@ -401,7 +401,7 @@ def contacto_html(activa=""):
     if lleno(vid.get("mp4")) and (BASE / vid["mp4"]).exists():
         poster = vid.get("poster", "")
         fondo = (f'''<div class="cierre-fondo" aria-hidden="true">
-    <img class="cierre-poster" src="/{e(poster)}" alt="" loading="lazy">
+    <img class="cierre-poster" src="/{e(poster)}" alt="">
     <video class="cierre-video" autoplay muted loop playsinline preload="metadata" poster="/{e(poster)}"><source src="/{e(vid["mp4"])}" type="video/mp4"></video>
   </div>
   <button class="cierre-sonido" type="button" aria-pressed="false"><span class="cierre-sonido-icono" aria-hidden="true"></span><span class="cierre-sonido-texto">Activar sonido</span></button>''')
@@ -616,7 +616,7 @@ def consultor():
     else:
         formacion = (f'<div class="formacion aparece"><strong>Formación</strong><p>{e(fm)}</p></div>' if lleno(fm) else "")
     foto = co.get("foto_intro", "")
-    foto_html = (f'<figure class="intro-foto aparece"><img src="/{e(foto)}" alt="Juanra Doménech trabajando con una tableta" loading="lazy"></figure>'
+    foto_html = (f'<figure class="intro-foto aparece"><img src="/{e(foto)}" alt="Juanra Doménech trabajando con una tableta"></figure>'
                  if lleno(foto) and (BASE / foto).exists() else "")
     contenido = f'''{portada_pagina("consultor", "01", arte_reticula(7), co.get("foto_cabecera", ""))}
 <section class="parte" aria-labelledby="t-intro-consultor">
@@ -661,7 +661,7 @@ def marcas_html(ci):
     for m in marcas:
         logo = m.get("logo", "")
         if lleno(logo) and (BASE / logo).exists():
-            dentro = f'<img src="/{e(logo)}" alt="{e(m["nombre"])}" loading="lazy">'
+            dentro = f'<img src="/{e(logo)}" alt="{e(m["nombre"])}">'
         else:
             dentro = f'<span class="marca-texto">{e(m["nombre"])}</span>'
         if lleno(m.get("url")):
@@ -746,7 +746,7 @@ def hitos_html(ci):
     for i, h in enumerate(hitos):
         foto = h.get("foto", "")
         if lleno(foto) and (BASE / foto).exists():
-            visual = f'<img src="/{e(foto)}" alt="{e(h["titulo"])}" loading="lazy">'
+            visual = f'<img src="/{e(foto)}" alt="{e(h["titulo"])}">'
         else:
             visual = arte_curvas()
         tarjetas.append(f'''<article class="hito{" hito--siguiente" if i else ""} aparece">
@@ -784,7 +784,7 @@ def ciclista():
     elif not ci.get("hitos"):
         retos = f'<div class="wrap"><div class="proximamente aparece"><p>{e(ci["proximamente"])}</p></div></div>'
     foto = ci.get("foto_intro", "")
-    foto_html = (f'<figure class="intro-foto intro-foto--bici aparece"><img src="/{e(foto)}" alt="Juanra Doménech con su bicicleta de carretera" loading="lazy"></figure>'
+    foto_html = (f'<figure class="intro-foto intro-foto--bici aparece"><img src="/{e(foto)}" alt="Juanra Doménech con su bicicleta de carretera"></figure>'
                  if lleno(foto) and (BASE / foto).exists() else "")
     parrafos = "".join(f'<p>{e(p)}</p>' for p in ci.get("parrafos", []))
     cita = f'<blockquote class="cita aparece">{e(ci["cita"])}</blockquote>' if lleno(ci.get("cita")) else ""
@@ -842,7 +842,7 @@ def app_pagina(clave):
     url_mail = (f'mailto:{co["correo"]}?subject=' + urllib.parse.quote(a["cta_asunto"])
                 + "&body=" + urllib.parse.quote(a["cta_cuerpo"]))
     img = lambda x, cls="": (f'<img class="{cls}" src="/{e(x["src"])}" alt="{e(x["alt"])}" width="{x["ancho"]}" '
-                             f'height="{x["alto"]}" loading="lazy" decoding="async">')
+                             f'height="{x["alto"]}" decoding="async">')
     marco = lambda x: f'''<figure class="app-marco"><div class="app-marco-barra"><i></i><i></i><i></i></div>{img(x)}</figure>'''
     funciones = "".join(f'''<li class="aparece"><span>{i:02d}</span><h3>{e(f["titulo"])}</h3><p>{e(f["texto"])}</p></li>'''
                         for i, f in enumerate(a["funciones"], 1))
