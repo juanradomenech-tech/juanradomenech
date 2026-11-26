@@ -1386,7 +1386,7 @@
         },
         {
           "titulo": "Exporta cuando quieras",
-          "texto": "Tus artículos y gastos en PDF o Excel, para tu gestor o para tus propias cuentas."
+          "texto": "Tus artículos y gastos en PDF o Excel, para la declaración de la renta o para tus propias cuentas."
         }
       ],
       "capturas": [
@@ -1413,6 +1413,13 @@
       "cta_cuerpo": "Hola Juanra,\n\nQuiero apuntarme a la lista de espera de Personal Finance PRO.\n\nNombre: \n",
       "secundario": "",
       "aviso": "Las capturas usan datos de ejemplo.",
+      "para_quien": {
+        "etiqueta": "Para quién es",
+        "titulo": "Para tu dinero, no para tu empresa",
+        "texto": "Personal Finance PRO es una app de finanzas personales: está pensada para el presupuesto de una persona o de una familia, no para llevar las cuentas de un negocio.",
+        "si": ["Los gastos de casa, del súper y del día a día", "Tu presupuesto semanal y mensual", "Tus cuentas bancarias personales"],
+        "no": ["Facturas, IVA ni impuestos de empresa", "Contabilidad, nóminas ni proveedores", "Cuentas de una sociedad o de un autónomo"]
+      },
       "menu": "PFP",
       "precio_h2": "Precio de lanzamiento Black Friday",
       "pregunta": {

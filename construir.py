@@ -859,6 +859,19 @@ def app_pagina(clave):
   </div>
 </section>
 ''' if pg else "")
+    pq = a.get("para_quien")
+    para_quien = (f'''<section class="parte app-para" aria-labelledby="t-para">
+  <div class="wrap">
+    <span class="etiqueta">{e(pq["etiqueta"])}</span>
+    <h2 class="titulo aparece" id="t-para">{e(pq["titulo"])}</h2>
+    <p class="app-para-texto aparece">{e(pq["texto"])}</p>
+    <div class="app-para-listas aparece">
+      <div><h3>Sí</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in pq["si"])}</ul></div>
+      <div class="app-para-no"><h3>No</h3><ul>{"".join(f"<li>{e(x)}</li>" for x in pq["no"])}</ul></div>
+    </div>
+  </div>
+</section>
+''' if pq else "")
     contenido = f'''<section class="parte app-hero" aria-labelledby="t-app">
   <div class="wrap">
     <span class="etiqueta">{e(a["etiqueta"])}</span>
@@ -880,7 +893,7 @@ def app_pagina(clave):
     <div class="app-capturas">{capturas}</div>
   </div>
 </section>
-<section class="parte app-precio" aria-labelledby="t-precio">
+{para_quien}<section class="parte app-precio" aria-labelledby="t-precio">
   <div class="wrap app-precio-caja aparece">
     <div><span class="etiqueta">{e(a["precio_titulo"])}</span>
       <h2 class="titulo" id="t-precio">{e(a.get("precio_h2", "Sé de los primeros"))}</h2>
@@ -960,6 +973,7 @@ def pfp_condiciones():
 
   <h2>2. Qué es la app</h2>
   <p>Una herramienta para llevar tu presupuesto personal: apuntas gastos escribiendo, dictando o fotografiando tickets, y una inteligencia artificial los coloca en su partida. También puedes llevar la tesorería de tus cuentas y conciliarla con los movimientos de tu banco. Es una ayuda para organizarte, no asesoramiento financiero, fiscal ni de inversión.</p>
+  <p>Es una app de <strong>finanzas personales</strong>, para una persona o una familia. No está pensada para llevar la contabilidad de una empresa o de un autónomo: no gestiona facturas, IVA, nóminas ni impuestos de actividades económicas.</p>
   <p>La IA puede equivocarse al leer un ticket, al interpretar un mensaje o al proponer una partida. Revisa lo que importa y corrígelo cuando haga falta.</p>
 
   <h2>3. Tu cuenta</h2>
