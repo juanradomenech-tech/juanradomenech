@@ -92,7 +92,7 @@ h1, h2, h3 { margin: 0; font-family: var(--font-condensed); font-weight: 700; te
 .panel .ver-mas::before { content: ""; width: 24px; height: 2px; background: var(--orange); }
 
 /* ---------- Bloques ---------- */
-.parte { position: relative; padding: clamp(80px, 12vw, 160px) 0 clamp(60px, 8vw, 120px); overflow: hidden; }
+.parte { position: relative; padding: clamp(56px, 8.4vw, 112px) 0 clamp(42px, 5.6vw, 84px); overflow: hidden; }
 .parte--suave { background: var(--black-soft); }
 .marca-agua { position: absolute; top: clamp(30px, 6vw, 80px); left: 50%; transform: translateX(-50%); font-family: var(--font-condensed); font-weight: 800; font-size: clamp(90px, 20vw, 300px); line-height: 1; letter-spacing: 8px; text-transform: uppercase; color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.07); white-space: nowrap; pointer-events: none; user-select: none; }
 .etiqueta { display: inline-flex; align-items: center; gap: 12px; font-family: var(--font-condensed); font-weight: 700; font-size: 13px; letter-spacing: 4px; text-transform: uppercase; color: var(--orange); }
@@ -100,7 +100,7 @@ h1, h2, h3 { margin: 0; font-family: var(--font-condensed); font-weight: 700; te
 .titulo { margin-top: 18px; font-size: clamp(36px, 5.2vw, 68px); letter-spacing: clamp(3px, .5vw, 6px); }
 .titulo-sec { font-size: clamp(26px, 3vw, 32px); letter-spacing: 6px; }
 .entradilla { margin-top: 28px; max-width: 760px; font-size: clamp(17px, 1.6vw, 20px); line-height: 1.6; color: var(--white-70); }
-.cabeza-sec { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin: clamp(72px, 9vw, 120px) auto 32px; }
+.cabeza-sec { display: flex; justify-content: space-between; align-items: flex-end; gap: 24px; margin: clamp(50px, 6.3vw, 84px) auto 32px; }
 
 /* Cifras */
 .cifras { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px; margin-top: 64px; background: var(--white-10); border: 1px solid var(--white-10); }
@@ -148,7 +148,7 @@ h1, h2, h3 { margin: 0; font-family: var(--font-condensed); font-weight: 700; te
 .formacion strong { font-family: var(--font-condensed); font-size: 14px; letter-spacing: 4px; text-transform: uppercase; color: var(--white); }
 
 /* Puente */
-.puente { position: relative; padding: clamp(80px, 10vw, 140px) 0; background: var(--orange); color: var(--black); overflow: hidden; }
+.puente { position: relative; padding: clamp(56px, 7vw, 98px) 0; background: var(--orange); color: var(--black); overflow: hidden; }
 .puente .arte-puente { position: absolute; inset: auto 0 0 0; width: 100%; height: 55%; opacity: .25; }
 .puente .etiqueta { color: var(--black); }
 .puente .etiqueta::before { background: var(--black); }
@@ -169,7 +169,7 @@ h1, h2, h3 { margin: 0; font-family: var(--font-condensed); font-weight: 700; te
 .aviso-empresa p { color: var(--white-70); margin-top: 6px; }
 
 /* Cierre */
-.cierre { padding: clamp(100px, 12vw, 180px) 0; text-align: center; background: var(--black); }
+.cierre { padding: clamp(70px, 8.4vw, 126px) 0; text-align: center; background: var(--black); }
 .cierre .titulo { font-size: clamp(48px, 8vw, 110px); letter-spacing: clamp(4px, .8vw, 10px); }
 .cierre p { margin: 20px auto 40px; max-width: 560px; color: var(--white-70); font-size: 18px; }
 .cierre .acciones { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; }
@@ -247,7 +247,7 @@ h1, h2, h3 { margin: 0; font-family: var(--font-condensed); font-weight: 700; te
 }
 
 /* ---------- Marcas (ciclista) ---------- */
-.marcas-sec { padding: clamp(72px, 9vw, 120px) 0; background: var(--black); text-align: center; }
+.marcas-sec { padding: clamp(50px, 6.3vw, 84px) 0; background: var(--black); text-align: center; }
 .marcas-titulo { margin-bottom: 48px; }
 .marcas { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
 .marca { display: grid; place-items: center; height: 160px; padding: 24px; background: var(--black-card); }
@@ -277,7 +277,7 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .fam-res small { font-size: 13px; color: var(--white-70); }
 .encaje { list-style: none; margin: 28px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px 32px; font-size: 14px; color: var(--white-70); }
 .encaje li::before { content: "→ "; color: var(--orange); }
-.fam { margin-top: clamp(64px, 8vw, 104px); scroll-margin-top: calc(var(--header-h) + 16px); }
+.fam { margin-top: clamp(45px, 5.6vw, 73px); scroll-margin-top: calc(var(--header-h) + 16px); }
 .fam-h { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
 .fam-h h3 { font-size: clamp(26px, 3vw, 38px); letter-spacing: 3px; }
 .svc-lista { display: grid; gap: 6px; }
@@ -426,7 +426,7 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 @media (max-width: 640px) { .fam-grid { grid-template-columns: 1fr; } }
 
 /* Formación */
-.formacion2 { margin-top: clamp(72px, 9vw, 120px); padding-top: clamp(48px, 6vw, 72px); border-top: 1px solid var(--white-10); }
+.formacion2 { margin-top: clamp(50px, 6.3vw, 84px); padding-top: clamp(34px, 4.2vw, 50px); border-top: 1px solid var(--white-10); }
 .form-grid { display: grid; grid-template-columns: 1fr 2fr 1fr; gap: 6px; margin-top: 48px; align-items: start; }
 .form-grupo { background: var(--black-card); padding: 28px 24px; border-top: 3px solid var(--orange); }
 .form-grupo h3 { margin: 0 0 8px; font-family: var(--font-condensed); font-weight: 700; font-size: 14px; letter-spacing: 4px; text-transform: uppercase; color: var(--orange); display: flex; justify-content: space-between; }
@@ -644,7 +644,7 @@ a.marca:hover .marca-texto, a.marca:focus-visible .marca-texto { color: var(--wh
 .app-para-listas li { padding: 6px 0 6px 26px; position: relative; color: var(--white-70); line-height: 1.5; }
 .app-para-listas li::before { content: "✓"; position: absolute; left: 0; color: var(--orange, #FF671F); font-weight: 700; }
 .app-para-no li::before { content: "✕"; color: #888; }
-.app-pregunta { padding-block: clamp(64px, 10vw, 128px); text-align: center; }
+.app-pregunta { padding-block: clamp(45px, 7vw, 90px); text-align: center; }
 .app-pregunta-titulo { margin: 0 auto; max-width: 18ch; font-family: var(--font-condensed); font-weight: 800; font-size: clamp(36px, 6vw, 76px); line-height: 1; text-transform: uppercase; }
 .app-pregunta-titulo::first-line { color: inherit; }
 .app-pregunta-texto { max-width: 600px; margin: 24px auto 0; font-size: 18px; line-height: 1.6; color: var(--white-70); }
