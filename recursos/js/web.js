@@ -2,7 +2,7 @@
 (function () {
   "use strict";
   var doc = document.documentElement;
-  doc.classList.add("js");
+  doc.classList.add("js", "js-ok");
 
   /* Cabecera con fondo al bajar */
   var cabecera = document.querySelector(".cabecera");
@@ -40,6 +40,21 @@
 
   /* Aparición suave */
   var reducir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  /* Fundido de cada bloque al entrar en pantalla (1 s) y de cada imagen al terminar de cargar */
+  var bloques = document.querySelectorAll("main > section, .pie");
+  if (!reducir && "IntersectionObserver" in window) {
+    var obsB = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("fundido"); obsB.unobserve(en.target); } });
+    }, { rootMargin: "0px 0px -5% 0px" });
+    bloques.forEach(function (el) { obsB.observe(el); });
+  } else {
+    doc.classList.add("funde-todo");
+  }
+  document.querySelectorAll("main img").forEach(function (img) {
+    var lista = function () { img.classList.add("cargada"); };
+    if (img.complete && img.naturalWidth) lista(); else { img.addEventListener("load", lista); img.addEventListener("error", lista); }
+  });
   var aparecen = document.querySelectorAll(".aparece");
   if (!reducir && "IntersectionObserver" in window) {
     var obs2 = new IntersectionObserver(function (entradas) {
