@@ -41,16 +41,17 @@
   /* Aparición suave */
   var reducir = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  /* Fundido de cada bloque al entrar en pantalla (1 s) y de cada imagen al terminar de cargar */
-  var bloques = document.querySelectorAll("main > section, .pie");
-  if (!reducir && "IntersectionObserver" in window) {
-    var obsB = new IntersectionObserver(function (entradas) {
-      entradas.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add("fundido"); obsB.unobserve(en.target); } });
-    }, { rootMargin: "0px 0px -5% 0px" });
-    bloques.forEach(function (el) { obsB.observe(el); });
-  } else {
-    doc.classList.add("funde-todo");
-  }
+  /* Fundido de cada bloque al entrar en pantalla: cada pieza (panel, título, tarjeta, foto) aparece desde negro en 1 s,
+     y las piezas de una misma fila van una detrás de otra */
+  document.querySelectorAll("main .panel, main .wrap > *, .pie .wrap > *").forEach(function (el) {
+    if (el.classList.contains("aparece")) return;
+    if (el.querySelector(".aparece")) el.classList.add("visto"); else el.classList.add("aparece");
+  });
+  document.querySelectorAll(".aparece").forEach(function (el) {
+    var hermanos = Array.prototype.filter.call(el.parentNode.children, function (h) { return h.classList.contains("aparece"); });
+    var i = hermanos.indexOf(el);
+    if (hermanos.length > 1 && /^(LI|FIGURE|A|DIV)$/.test(el.tagName) && !el.parentNode.classList.contains("wrap")) el.style.transitionDelay = Math.min(i, 5) * 0.12 + "s";
+  });
   document.querySelectorAll("main img").forEach(function (img) {
     var lista = function () { img.classList.add("cargada"); };
     if (img.complete && img.naturalWidth) lista(); else { img.addEventListener("load", lista); img.addEventListener("error", lista); }
