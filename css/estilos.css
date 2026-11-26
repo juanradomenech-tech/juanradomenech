@@ -123,7 +123,7 @@ h1, h2, h3 { margin: 0; font-family: var(--font-condensed); font-weight: 700; te
 
 /* Carrusel */
 .carrusel { position: relative; }
-.pista { display: grid; grid-auto-flow: column; grid-auto-columns: clamp(270px, 28vw, 360px); gap: 6px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; --borde: max(var(--pad), calc((100% - var(--max)) / 2 + var(--pad))); padding: 0 var(--borde); scroll-padding: 0 var(--borde); cursor: grab; }
+.pista { display: grid; grid-auto-flow: column; grid-auto-columns: clamp(270px, 28vw, 360px); gap: 6px; overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; --borde: max(var(--pad), calc((100% - var(--max)) / 2 + var(--pad))); padding: 0 var(--borde); scroll-padding: 0 var(--borde); cursor: grab; clip-path: inset(-40px var(--borde)); }
 .pista::-webkit-scrollbar { display: none; }
 .pista.arrastrando { cursor: grabbing; scroll-snap-type: none; }
 .tarjeta { position: relative; scroll-snap-align: start; min-height: 420px; display: flex; flex-direction: column; justify-content: flex-end; padding: 32px 28px; background: var(--black-card); overflow: hidden; user-select: none; }
